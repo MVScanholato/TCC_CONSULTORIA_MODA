@@ -1,9 +1,10 @@
 from rest_framework import serializers
-from .models import Peca, Look, Usuario
+from django.contrib.auth.models import User
+from .models import Peca, Look, RegistroDiario
 
 class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Usuario
+        model = User
         fields = '__all__'
 
 class PecaSerializer(serializers.ModelSerializer):
@@ -22,4 +23,11 @@ class LookSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Look
+        fields = '__all__'
+
+class RegistroDiarioSerializer(serializers.ModelSerializer):
+    pecas_detalhes = PecaSerializer(source='pecas', many=True, read_only=True)
+
+    class Meta:
+        model = RegistroDiario
         fields = '__all__'

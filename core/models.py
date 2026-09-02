@@ -34,3 +34,17 @@ class Look(models.Model):
 
     def __str__(self):
         return self.nome_look or "Look"
+
+
+class RegistroDiario(models.Model):
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE, null=True, blank=True)
+    usuario_django = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    data = models.DateField()
+    pecas = models.ManyToManyField(Peca, blank=True)
+    observacao = models.CharField(max_length=255, null=True, blank=True)
+    avaliacao = models.IntegerField(default=5, choices=[(i, i) for i in range(1, 6)])
+    comentario = models.TextField(blank=True, null=True)
+
+
+    def __str__(self):
+        return f"Registro {self.data}"

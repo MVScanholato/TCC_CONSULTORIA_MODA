@@ -5,8 +5,8 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.db.models import Q
-from .models import Peca, Look
-from .serializers import PecaSerializer, LookSerializer, UsuarioSerializer
+from .models import Peca, Look, RegistroDiario
+from .serializers import PecaSerializer, LookSerializer, UsuarioSerializer, RegistroDiarioSerializer
 import random
 
 
@@ -197,3 +197,16 @@ def alterar_senha(request):
     request.user.save()
     login(request, request.user)
     return Response({'mensagem': 'Senha alterada com sucesso!'})
+
+
+class RegistroDiarioViewSet(viewsets.ModelViewSet):
+    serializer_class = RegistroDiarioSerializer
+
+    def get_queryset(self):
+        if self.request.user.is_authenticated:
+            return RegistroDiario.objects.filter(usuario_django=self.request.user).order_by('-data')
+        return RegistroDiario.objects.all().order_by('-data')
+
+    def perform_create(self, serializer):
+        user = self.request.user if self.request.user.is_authenticated else None
+        serializer.save(usuario_django=user)
