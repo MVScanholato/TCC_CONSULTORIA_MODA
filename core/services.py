@@ -1,6 +1,5 @@
 import random
 
-# Tabela de Harmonia de Cores
 COMBINACOES_CORES = {
     'preto': ['branco', 'cinza', 'jeans', 'vermelho', 'rosa', 'azul', 'amarelo', 'verde', 'bege'],
     'branco': ['preto', 'cinza', 'jeans', 'rosa', 'azul', 'verde', 'vermelho', 'bege'],
@@ -13,7 +12,6 @@ COMBINACOES_CORES = {
     'verde': ['preto', 'branco', 'jeans', 'bege'],
 }
 
-# Compatibilidade entre Estilos
 COMPATIBILIDADE_ESTILOS = {
     'casual': ['casual', 'esporte', 'festa'],
     'formal': ['formal', 'trabalho'],
@@ -55,18 +53,15 @@ def gerar_recomendacao_look(pecas, clima='Geral', ocasiao='Geral'):
     - Harmonia de Cores
     - Compatibilidade de Estilo
     """
-    # 1. Separar as peças por categoria superior e inferior
     categorias_superiores = ['camiseta', 'blusa', 'camisa', 'casaco', 'jaqueta', 'top', 'moletom']
     categorias_inferiores = ['calça', 'short', 'bermuda', 'saia', 'calca']
 
     pecas_superiores = [p for p in pecas if p.categoria.lower().strip() in categorias_superiores]
     pecas_inferiores = [p for p in pecas if p.categoria.lower().strip() in categorias_inferiores]
 
-    # Se não houver peças suficientes das duas categorias
     if not pecas_superiores or not pecas_inferiores:
         return None, "É necessário ter pelo menos uma peça superior e uma inferior cadastradas."
 
-    # 2. Filtrar por clima se especificado
     if clima.lower() == 'verão':
         pecas_superiores = [p for p in pecas_superiores if
                             p.categoria.lower().strip() not in ['casaco', 'jaqueta', 'moletom']]
@@ -76,7 +71,6 @@ def gerar_recomendacao_look(pecas, clima='Geral', ocasiao='Geral'):
         pecas_inferiores = [p for p in pecas_inferiores if
                             p.categoria.lower().strip() not in ['short', 'bermuda']] or pecas_inferiores
 
-    # 3. Buscar par ideal combinando cor e estilo
     combinacoes_validas = []
 
     for sup in pecas_superiores:
@@ -84,7 +78,6 @@ def gerar_recomendacao_look(pecas, clima='Geral', ocasiao='Geral'):
             cor_combina = sao_cores_harmonicas(sup.cor, inf.cor)
             estilo_combina = sao_estilos_compativeis(getattr(sup, 'estilo', ''), getattr(inf, 'estilo', ''))
 
-            # Dá peso maior para pares que combinam cor AND estilo
             if cor_combina and estilo_combina:
                 combinacoes_validas.append((sup, inf, "perfeita"))
             elif cor_combina:
@@ -92,9 +85,8 @@ def gerar_recomendacao_look(pecas, clima='Geral', ocasiao='Geral'):
             elif estilo_combina:
                 combinacoes_validas.append((sup, inf, "bom_estilo"))
 
-    # 4. Selecionar o melhor par
     if combinacoes_validas:
-        # Prioriza combinações perfeitas (cor + estilo)
+
         perfeitas = [pair for pair in combinacoes_validas if pair[2] == "perfeita"]
         if perfeitas:
             sup, inf, tipo = random.choice(perfeitas)
@@ -104,7 +96,6 @@ def gerar_recomendacao_look(pecas, clima='Geral', ocasiao='Geral'):
             sup, inf, tipo = random.choice(combinacoes_validas)
             descricao = (f"Sugestão de look: {sup.categoria} ({sup.cor}) combinada com {inf.categoria} ({inf.cor}).")
     else:
-        # Fallback inteligente
         sup = random.choice(pecas_superiores)
         inf = random.choice(pecas_inferiores)
         descricao = f"Combinação casual: {sup.categoria} ({sup.cor}) com {inf.categoria} ({inf.cor})."

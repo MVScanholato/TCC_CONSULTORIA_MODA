@@ -10,7 +10,6 @@ from .serializers import PecaSerializer, LookSerializer, UsuarioSerializer, Regi
 import random
 
 
-# API de Cadastro de Usuário
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def cadastrar_usuario(request):
@@ -29,7 +28,6 @@ def cadastrar_usuario(request):
     return Response({'mensagem': 'Usuário cadastrado com sucesso!', 'user': {'id': user.id, 'username': user.username}})
 
 
-# API de Login
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def login_usuario(request):
@@ -44,14 +42,12 @@ def login_usuario(request):
         return Response({'erro': 'Usuário ou senha inválidos.'}, status=status.HTTP_401_UNAUTHORIZED)
 
 
-# API de Logout
 @api_view(['POST'])
 def logout_usuario(request):
     logout(request)
     return Response({'mensagem': 'Logout realizado com sucesso!'})
 
 
-# API para verificar quem está logado
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def usuario_atual(request):
@@ -96,7 +92,6 @@ class LookViewSet(viewsets.ModelViewSet):
         else:
             pecas_base = Peca.objects.all()
 
-        # Filtra estritamente pelo clima escolhido ou peças coringa ("Geral"/"Todos")
         if clima_filtro != 'Geral':
             pecas_usuario = pecas_base.filter(
                 Q(clima__iexact=clima_filtro) |
@@ -109,38 +104,31 @@ class LookViewSet(viewsets.ModelViewSet):
         else:
             pecas_usuario = pecas_base
 
-        # 1. Peças Superiores do clima correto
         superiores = pecas_usuario.filter(
             Q(categoria__icontains='camis') | Q(categoria__icontains='blusa') | Q(categoria__icontains='top') | Q(categoria__icontains='casaco') | Q(categoria__icontains='jaqueta') | Q(categoria__icontains='suéter') | Q(categoria__icontains='sueter')
         )
 
-        # 2. Peças Inferiores do clima correto (exclui calçados)
         inferiores = pecas_usuario.filter(
             Q(categoria__icontains='calça') | Q(categoria__icontains='calca') | Q(categoria__icontains='short') | Q(categoria__icontains='saia')
         ).exclude(
             Q(categoria__icontains='sapato') | Q(categoria__icontains='salto') | Q(categoria__icontains='tenis') | Q(categoria__icontains='sandalia') | Q(categoria__icontains='calcado') | Q(categoria__icontains='calçado') | Q(categoria__icontains='bota')
         )
 
-        # 3. Calçados DO CLIMA CORRETO apenas
         calcados = pecas_usuario.filter(
             Q(categoria__icontains='sapato') | Q(categoria__icontains='salto') | Q(categoria__icontains='tenis') | Q(categoria__icontains='tênis') | Q(categoria__icontains='sandalia') | Q(categoria__icontains='calcado') | Q(categoria__icontains='calçado') | Q(categoria__icontains='bota')
         )
 
         pecas_selecionadas = []
 
-        # Seleciona 1 superior do clima correto
         if superiores.exists():
             pecas_selecionadas.append(random.choice(list(superiores)))
 
-        # Seleciona 1 inferior do clima correto
         if inferiores.exists():
             pecas_selecionadas.append(random.choice(list(inferiores)))
 
-        # Seleciona 1 calçado do clima correto
         if calcados.exists():
             pecas_selecionadas.append(random.choice(list(calcados)))
 
-        # Se não houver peças suficientes cadastradas para esse clima específico
         if len(pecas_selecionadas) < 2:
             return Response(
                 {"erro": f"Não há peças suficientes cadastradas para o clima '{clima_filtro}'. Cadastre peças com esse clima!"},
@@ -181,7 +169,6 @@ class LookViewSet(viewsets.ModelViewSet):
         })
 
 
-# API para alterar a senha
 @api_view(['POST'])
 def alterar_senha(request):
     if not request.user.is_authenticated:

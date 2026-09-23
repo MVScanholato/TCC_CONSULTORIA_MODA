@@ -30,6 +30,5 @@ urlpatterns = [
     path('api/auth/alterar-senha/', alterar_senha, name='alterar_senha'),
 ]
 
-# Libera o acesso público às imagens salvas
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
