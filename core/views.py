@@ -66,7 +66,6 @@ class PecaViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         file_obj = self.request.FILES.get('imagem') or self.request.FILES.get('imagem_path')
-
         user = self.request.user if self.request.user.is_authenticated else None
 
         if file_obj:
@@ -104,69 +103,88 @@ class LookViewSet(viewsets.ModelViewSet):
         else:
             pecas_usuario = pecas_base
 
-        superiores = pecas_usuario.filter(
+        superiores = list(pecas_usuario.filter(
             Q(categoria__icontains='camis') | Q(categoria__icontains='blusa') | Q(categoria__icontains='top') | Q(categoria__icontains='casaco') | Q(categoria__icontains='jaqueta') | Q(categoria__icontains='suéter') | Q(categoria__icontains='sueter')
-        )
+        ))
 
-        inferiores = pecas_usuario.filter(
+        inferiores = list(pecas_usuario.filter(
             Q(categoria__icontains='calça') | Q(categoria__icontains='calca') | Q(categoria__icontains='short') | Q(categoria__icontains='saia')
         ).exclude(
             Q(categoria__icontains='sapato') | Q(categoria__icontains='salto') | Q(categoria__icontains='tenis') | Q(categoria__icontains='sandalia') | Q(categoria__icontains='calcado') | Q(categoria__icontains='calçado') | Q(categoria__icontains='bota')
-        )
+        ))
 
-        calcados = pecas_usuario.filter(
+        calcados = list(pecas_usuario.filter(
             Q(categoria__icontains='sapato') | Q(categoria__icontains='salto') | Q(categoria__icontains='tenis') | Q(categoria__icontains='tênis') | Q(categoria__icontains='sandalia') | Q(categoria__icontains='calcado') | Q(categoria__icontains='calçado') | Q(categoria__icontains='bota')
-        )
+        ))
 
-        pecas_selecionadas = []
-
-        if superiores.exists():
-            pecas_selecionadas.append(random.choice(list(superiores)))
-
-        if inferiores.exists():
-            pecas_selecionadas.append(random.choice(list(inferiores)))
-
-        if calcados.exists():
-            pecas_selecionadas.append(random.choice(list(calcados)))
-
-        if len(pecas_selecionadas) < 2:
+        if len(superiores) + len(inferiores) + len(calcados) < 2:
             return Response(
                 {"erro": f"Não há peças suficientes cadastradas para o clima '{clima_filtro}'. Cadastre peças com esse clima!"},
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-        pecas_do_look = [
-            {
-                "id": p.id,
-                "categoria": p.categoria,
-                "cor": p.cor,
-                "imagem": request.build_absolute_uri(p.imagem.url) if p.imagem else None
-            }
-            for p in pecas_selecionadas
-        ]
-
-        nomes_pecas = " & ".join([p.categoria.capitalize() for p in pecas_selecionadas])
-        nome_look = f"Look {clima_filtro} - {nomes_pecas}"
-
-        descricoes = [f"{p.categoria} ({p.cor})" for p in pecas_selecionadas]
-        descricao = f"Sugestão de look completo: {', '.join(descricoes)}."
-
         user = request.user if request.user.is_authenticated else None
-        novo_look = Look.objects.create(
-            usuario_django=user,
-            nome_look=nome_look,
-            descricao=descricao
-        )
-        novo_look.pecas.add(*pecas_selecionadas)
+        looks_gerados = []
+        combinacoes_vistas = set()
 
-        return Response({
-            "look": {
+        tentativas = 0
+        while len(looks_gerados) < 3 and tentativas < 25:
+            tentativas += 1
+            pecas_selecionadas = []
+
+            if superiores:
+                pecas_selecionadas.append(random.choice(superiores))
+            if inferiores:
+                pecas_selecionadas.append(random.choice(inferiores))
+            if calcados:
+                pecas_selecionadas.append(random.choice(calcados))
+
+            if len(pecas_selecionadas) < 2:
+                continue
+
+            ids_combo = tuple(sorted([p.id for p in pecas_selecionadas]))
+            if ids_combo in combinacoes_vistas:
+                continue
+
+            combinacoes_vistas.add(ids_combo)
+
+            nomes_pecas = " & ".join([p.categoria.capitalize() for p in pecas_selecionadas])
+            nome_look = f"Opção {len(looks_gerados) + 1} ({clima_filtro}) - {nomes_pecas}"
+
+            descricoes = [f"{p.categoria} ({p.cor})" for p in pecas_selecionadas]
+            descricao = f"Sugestão de look completo: {', '.join(descricoes)}."
+
+            novo_look = Look.objects.create(
+                usuario_django=user,
+                nome_look=nome_look,
+                descricao=descricao
+            )
+            novo_look.pecas.add(*pecas_selecionadas)
+
+            pecas_do_look = [
+                {
+                    "id": p.id,
+                    "categoria": p.categoria,
+                    "cor": p.cor,
+                    "imagem": request.build_absolute_uri(p.imagem.url) if p.imagem else None
+                }
+                for p in pecas_selecionadas
+            ]
+
+            looks_gerados.append({
                 "id": novo_look.id,
                 "nome_look": nome_look,
                 "descricao": descricao,
                 "pecas": pecas_do_look
-            }
-        })
+            })
+
+        if not looks_gerados:
+            return Response(
+                {"erro": "Não foi possível gerar combinações com as peças disponíveis."},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        return Response({"looks": looks_gerados})
 
 
 @api_view(['POST'])
