@@ -9,7 +9,6 @@ from .models import Peca, Look, RegistroDiario
 from .serializers import PecaSerializer, LookSerializer, UsuarioSerializer, RegistroDiarioSerializer
 import random
 
-
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def cadastrar_usuario(request):
@@ -60,18 +59,21 @@ class PecaViewSet(viewsets.ModelViewSet):
     serializer_class = PecaSerializer
 
     def get_queryset(self):
+        # Se o usuário estiver autenticado, retorna apenas as peças dele
         if self.request.user.is_authenticated:
             return Peca.objects.filter(usuario_django=self.request.user).order_by('-id')
-        return Peca.objects.all().order_by('-id')
+
+        # Caso não esteja autenticado ou use o usuário fallback (primeiro do banco):
+        user = User.objects.first()
+        if user:
+            return Peca.objects.filter(usuario_django=user).order_by('-id')
+
+        return Peca.objects.none()
 
     def perform_create(self, serializer):
-        file_obj = self.request.FILES.get('imagem') or self.request.FILES.get('imagem_path')
-        user = self.request.user if self.request.user.is_authenticated else None
-
-        if file_obj:
-            serializer.save(usuario_django=user, imagem=file_obj)
-        else:
-            serializer.save(usuario_django=user)
+        # Associa a nova peça ao usuário logado
+        user = self.request.user if self.request.user.is_authenticated else User.objects.first()
+        serializer.save(usuario_django=user)
 
 
 class LookViewSet(viewsets.ModelViewSet):
@@ -79,8 +81,8 @@ class LookViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         if self.request.user.is_authenticated:
-            return Look.objects.filter(usuario_django=self.request.user).order_by('-id')
-        return Look.objects.all().order_by('-id')
+            return Peca.objects.filter(usuario_django=self.request.user).order_by('-id')
+        return Peca.objects.none()
 
     @action(detail=False, methods=['post'])
     def gerar_look(self, request):
@@ -209,9 +211,9 @@ class RegistroDiarioViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         if self.request.user.is_authenticated:
-            return RegistroDiario.objects.filter(usuario_django=self.request.user).order_by('-data')
-        return RegistroDiario.objects.all().order_by('-data')
+            return RegistroDiario.objects.filter(usuario_django=self.request.user).order_by('-id')
+        return RegistroDiario.objects.all().order_by('-id')
 
     def perform_create(self, serializer):
-        user = self.request.user if self.request.user.is_authenticated else None
+        user = self.request.user if self.request.user.is_authenticated else User.objects.first()
         serializer.save(usuario_django=user)
