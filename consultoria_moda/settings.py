@@ -89,19 +89,16 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Permite o envio de cookies e credenciais de sessão entre o React e o Django
 CORS_ALLOW_CREDENTIALS = True
 
-# Define explicitamente quais origens têm permissão de acesso
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
 ]
 
-# Configurações para garantir o funcionamento dos cookies de sessão no navegador
 SESSION_COOKIE_SAMESITE = 'Lax'
 CSRF_COOKIE_SAMESITE = 'Lax'
 SESSION_COOKIE_HTTPONLY = True
 CSRF_COOKIE_HTTPONLY = False
-
-
