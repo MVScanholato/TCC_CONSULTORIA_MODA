@@ -1,0 +1,4087 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+consultoria_moda/
+  __init__.py
+  .gitignore
+  asgi.py
+  settings.py
+  urls.py
+  wsgi.py
+core/
+  migrations/
+    __init__.py
+    0001_initial.py
+    0002_remove_look_clima_sugerido_remove_look_criado_em_and_more.py
+    0003_look_usuario_django_peca_usuario_django.py
+    0004_registrodiario.py
+    0005_registrodiario_avaliacao_registrodiario_comentario.py
+  __init__.py
+  admin.py
+  apps.py
+  models.py
+  serializers.py
+  services.py
+  tests.py
+  views.py
+frontend-consultoria/
+  .git/
+    hooks/
+      applypatch-msg.sample
+      commit-msg.sample
+      fsmonitor-watchman.sample
+      post-update.sample
+      pre-applypatch.sample
+      pre-commit.sample
+      pre-merge-commit.sample
+      pre-push.sample
+      pre-rebase.sample
+      pre-receive.sample
+      prepare-commit-msg.sample
+      push-to-checkout.sample
+      sendemail-validate.sample
+      update.sample
+    info/
+      exclude
+    logs/
+      refs/
+        heads/
+          master
+      HEAD
+    objects/
+      08/
+        0d6c77ac21bb2ef88a6992b2b73ad93daaca92
+      0a/
+        b9ef2ca114bd0b9ed2ac30b0977b65ae3df414
+      10/
+        2962f5880c34a5b0c352c6550c6193dab85ef5
+      1f/
+        03afeece5ac28064fa3c73a29215037465f789
+      34/
+        02a640a504bdb22f72e5c41e3cb8f8fd3779f4
+      37/
+        845757234ccb68531c10cf7a2ffc589c47e342
+      44/
+        c72fd6c9957632e45c258016faee32b6f0cce8
+      4d/
+        29575de80483b005c29bfcac5061cd2f45313e
+      52/
+        53d3ad9e6be6690549cb255f5952337b02401d
+      58/
+        beeaccd87e230076cab531b8f418f40b6d1aeb
+      74/
+        b5e053450a48a6bdb4d71aad648e7af821975c
+      7b/
+        1e172334cdc980bee9ad6a8a87cf21e0ed18d8
+      8e/
+        29b36dea7f04ae8729d8b33ecc05c3c9b0fe46
+      8f/
+        2609b7b3e0e3897ab3bcaad13caf6876e48699
+      90/
+        2276922c0d555713ab8916c5c1cdfdd641797f
+      9d/
+        fc1c058cebbef8b891c5062be6f31033d7d186
+      a1/
+        1777cc471a4344702741ab1c8a588998b1311a
+      a4/
+        e47a6545bc15971f8f63fba70e4013df88a664
+      a6/
+        2b05b490af0834dd93307083677d0388300169
+      aa/
+        069f27cbd9d53394428171c3989fd03db73c76
+      b1/
+        047f665e7d2edc1898cf54e04a0670ae50d64c
+      be/
+        05b7c545e08066cc1a4b8a99ff8a582155c904
+      d5/
+        63c0fb10ba0e42724b21286eb546ee4e5734fc
+      e6/
+        9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+      e9/
+        e57dc4d41b9b46e05112e9f45b7ea6ac0ba15e
+      ec/
+        2585e8c0bb8188184ed1e0703c4c8f2a8419b0
+      f4/
+        e531da05d867e9b00c48256c6b0f1b11d0d1df
+      fc/
+        44b0a3796c0e0a64c3d858ca038bd4570465d9
+    refs/
+      heads/
+        master
+    COMMIT_EDITMSG
+    config
+    description
+    HEAD
+    index
+  public/
+    capa-login.png
+    favicon.ico
+    index.html
+    logo.png
+    manifest.json
+    react.logo.png
+    react.logo2.png
+    robots.txt
+  src/
+    AbaDashboard.js
+    AbaDiario.js
+    App.css
+    App.js
+    App.test.js
+    index.css
+    index.js
+    logo.svg
+    reportWebVitals.js
+    setupTests.js
+  .gitignore
+  package.json
+  README.md
+media/
+  pecas/
+    27010222_015_3-CALCA-PANTALONA-CREPE.webp
+    bastien-nvs-DOpqfCcYZmM-unsplash_1.jpg
+    bastien-nvs-DOpqfCcYZmM-unsplash.jpg
+    bastien-nvs-fRWKQLDnFC8-unsplash.jpg
+    behzad-ghaffarian-GweI0gjVck4-unsplash.jpg
+    blusa-tshurt_CuNyveF.jpg
+    blusa-tshurt.jpg
+    calça_jeans_GMgJnCG.jpg
+    calça_jeans.jpg
+    Captura_de_tela_2025-09-08_201015_YLhoKz4.png
+    Captura_de_tela_2025-09-08_201015.png
+    Captura_de_tela_2025-10-30_163924_1amoIbX.png
+    Captura_de_tela_2025-10-30_163924_6aorQJx.png
+    Captura_de_tela_2025-10-30_163924_D4Lpt2A.png
+    Captura_de_tela_2025-10-30_163924_iNyBGyn.png
+    Captura_de_tela_2025-10-30_163924_jzYgXVF.png
+    Captura_de_tela_2025-10-30_163924_M86Ctva.png
+    Captura_de_tela_2025-10-30_163924.png
+    Captura_de_tela_2025-11-03_200250_6bAyfCa.png
+    Captura_de_tela_2025-11-03_200250_8jhHzqt.png
+    Captura_de_tela_2025-11-03_200250_bogMZxT.png
+    Captura_de_tela_2025-11-03_200250_Bqbrh6j.png
+    Captura_de_tela_2025-11-03_200250_FHvcB6m.png
+    Captura_de_tela_2025-11-03_200250_GO6TO90.png
+    Captura_de_tela_2025-11-03_200250_igOcCLJ.png
+    Captura_de_tela_2025-11-03_200250_lYbGwmx.png
+    Captura_de_tela_2025-11-03_200250_osysvDL.png
+    Captura_de_tela_2025-11-03_200250_VrJOlFs.png
+    Captura_de_tela_2025-11-03_200250_Ztvs0AV.png
+    Captura_de_tela_2025-11-03_200250.png
+    Captura_de_tela_2025-11-06_151601_9qVFsPd.png
+    Captura_de_tela_2025-11-06_151601.png
+    Captura_de_tela_2025-11-26_144737_z0hcwkV.png
+    Captura_de_tela_2025-11-26_144737.png
+    Captura_de_tela_2025-11-26_163332_xQMdtje.png
+    Captura_de_tela_2025-11-26_163332.png
+    Captura_de_tela_2025-11-27_125253_YfbTNu3.png
+    Captura_de_tela_2025-11-27_125253.png
+    Captura_de_tela_2026-01-15_142339.png
+    Captura_de_tela_2026-03-16_195757.png
+    Design_sem_nome_9dNnYt9.png
+    Design_sem_nome_D08XQTU.png
+    Design_sem_nome_drC7FN1.png
+    Design_sem_nome_IzCESQG.png
+    Design_sem_nome_OY4Z5Mb.png
+    Design_sem_nome_Uvj2gwz.png
+    Design_sem_nome.png
+    Diagrama_sem_nome_7QhFLYR.drawio.png
+    Diagrama_sem_nome_h7j890i.drawio.png
+    Diagrama_sem_nome_HOTftqQ.drawio.png
+    Diagrama_sem_nome_jo6TF8h.drawio.png
+    Diagrama_sem_nome_tob9lDj.drawio.png
+    Diagrama_sem_nome_UKijACG.drawio.png
+    Diagrama_sem_nome_vzA29ew.drawio.png
+    Diagrama_sem_nome_w3JhJ3y.drawio.png
+    Diagrama_sem_nome.drawio.png
+    Foto_likendin.jpeg
+    images_1_4ez0cFY.jpg
+    images_1_aBndRNG.jpg
+    images_1.jpg
+    images_4ZaOaPh.jpg
+    images_DD6Ltx2.jpg
+    images_gCL9CQe.jpg
+    images_IsutAO1.jpg
+    images.jpg
+    logo_NE0Fffl.png.png
+    logo_RlprDHa.png.png
+    logo-closet_7vFk3bv.png.png
+    logo-closet_dUf1dSF.png.png
+    logo-closet_GPi3vtC.png.png
+    logo-closet_jAML3zg.png.png
+    logo-closet_NIbFbyS.png.png
+    logo-closet_Rw2dqsa.png.png
+    logo-closet_UnkQ2Js.png.png
+    logo-closet_wyGyvgV.png.png
+    logo-closet_YO4WCCS.png.png
+    logo-closet.png.png
+    logo.png.png
+    PecaRoupa_Management-2026-03-17-151123.png
+    saltobege_hFCznwL.webp
+    saltobege_PdB4vTu.webp
+    saltobege.webp
+    sandalha_RMuleru.webp
+    sandalha.webp
+    sapatilha_preta_hcHYtnV.webp
+    sapatilha_preta.webp
+    WhatsApp_Image_2026-01-21_at_10.18.06_1.jpeg
+    WhatsApp_Image_2026-07-06_at_19.15.26_3.jpeg
+    WhatsApp_Image_2026-09-02_at_14.26.32.jpeg
+    WhatsApp_Image_2026-09-29_at_20_D5IrVM8.24.35.jpeg
+    WhatsApp_Image_2026-09-29_at_20.24.35.jpeg
+    WhatsApp_Image_2026-10-10_at_16_1camOH7.41.05.jpeg
+    WhatsApp_Image_2026-10-10_at_16_b5ullyW.41.05.jpeg
+    WhatsApp_Image_2026-10-10_at_16_i9TNsQH.41.05.jpeg
+    WhatsApp_Image_2026-10-10_at_16.41.05.jpeg
+    WhatsApp_Image_2026-10-10_at_16.41.08.jpeg
+  roupas/
+    27010222_015_3-CALCA-PANTALONA-CREPE_h6q4QYl.webp
+    27010222_015_3-CALCA-PANTALONA-CREPE.webp
+    blusa-tshurt_3Dd74AT.jpg
+    blusa-tshurt.jpg
+    calça_jeans_mpw6lPv.jpg
+    calça_jeans.jpg
+    Captura_de_tela_2025-09-08_201015.png
+    Captura_de_tela_2025-11-03_200250_DNZnyfP.png
+    Captura_de_tela_2025-11-03_200250_xCZKt5R.png
+    Captura_de_tela_2025-11-03_200250.png
+    Captura_de_tela_2026-05-13_123239.png
+    Captura_de_tela_2026-08-18_203952.png
+    images_1_bYDvChD.jpg
+    images_1_QoQLNVu.jpg
+    images_1.jpg
+    images_IsJMtUA.jpg
+    images_To8Z3jN.jpg
+    images.jpg
+db.sqlite3
+manage.py
+package.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="frontend-consultoria/.git/hooks/applypatch-msg.sample">
+#!/bin/sh
+#
+# An example hook script to check the commit log message taken by
+# applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.  The hook is
+# allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "applypatch-msg".
+
+. git-sh-setup
+commitmsg="$(git rev-parse --git-path hooks/commit-msg)"
+test -x "$commitmsg" && exec "$commitmsg" ${1+"$@"}
+:
+</file>
+
+<file path="frontend-consultoria/.git/hooks/commit-msg.sample">
+#!/bin/sh
+#
+# An example hook script to check the commit log message.
+# Called by "git commit" with one argument, the name of the file
+# that has the commit message.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the
+# commit.  The hook is allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "commit-msg".
+
+# Uncomment the below to add a Signed-off-by line to the message.
+# Doing this in a hook is a bad idea in general, but the prepare-commit-msg
+# hook is more suited to it.
+#
+# SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
+
+# This example catches duplicate Signed-off-by lines.
+
+test "" = "$(grep '^Signed-off-by: ' "$1" |
+	 sort | uniq -c | sed -e '/^[ 	]*1[ 	]/d')" || {
+	echo >&2 Duplicate Signed-off-by lines.
+	exit 1
+}
+</file>
+
+<file path="frontend-consultoria/.git/hooks/fsmonitor-watchman.sample">
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use IPC::Open2;
+
+# An example hook script to integrate Watchman
+# (https://facebook.github.io/watchman/) with git to speed up detecting
+# new and modified files.
+#
+# The hook is passed a version (currently 2) and last update token
+# formatted as a string and outputs to stdout a new update token and
+# all files that have been modified since the update token. Paths must
+# be relative to the root of the working tree and separated by a single NUL.
+#
+# To enable this hook, rename this file to "query-watchman" and set
+# 'git config core.fsmonitor .git/hooks/query-watchman'
+#
+my ($version, $last_update_token) = @ARGV;
+
+# Uncomment for debugging
+# print STDERR "$0 $version $last_update_token\n";
+
+# Check the hook interface version
+if ($version ne 2) {
+	die "Unsupported query-fsmonitor hook version '$version'.\n" .
+	    "Falling back to scanning...\n";
+}
+
+my $git_work_tree = get_working_dir();
+
+my $retry = 1;
+
+my $json_pkg;
+eval {
+	require JSON::XS;
+	$json_pkg = "JSON::XS";
+	1;
+} or do {
+	require JSON::PP;
+	$json_pkg = "JSON::PP";
+};
+
+launch_watchman();
+
+sub launch_watchman {
+	my $o = watchman_query();
+	if (is_work_tree_watched($o)) {
+		output_result($o->{clock}, @{$o->{files}});
+	}
+}
+
+sub output_result {
+	my ($clockid, @files) = @_;
+
+	# Uncomment for debugging watchman output
+	# open (my $fh, ">", ".git/watchman-output.out");
+	# binmode $fh, ":utf8";
+	# print $fh "$clockid\n@files\n";
+	# close $fh;
+
+	binmode STDOUT, ":utf8";
+	print $clockid;
+	print "\0";
+	local $, = "\0";
+	print @files;
+}
+
+sub watchman_clock {
+	my $response = qx/watchman clock "$git_work_tree"/;
+	die "Failed to get clock id on '$git_work_tree'.\n" .
+		"Falling back to scanning...\n" if $? != 0;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub watchman_query {
+	my $pid = open2(\*CHLD_OUT, \*CHLD_IN, 'watchman -j --no-pretty')
+	or die "open2() failed: $!\n" .
+	"Falling back to scanning...\n";
+
+	# In the query expression below we're asking for names of files that
+	# changed since $last_update_token but not from the .git folder.
+	#
+	# To accomplish this, we're using the "since" generator to use the
+	# recency index to select candidate nodes and "fields" to limit the
+	# output to file names only. Then we're using the "expression" term to
+	# further constrain the results.
+	my $last_update_line = "";
+	if (substr($last_update_token, 0, 1) eq "c") {
+		$last_update_token = "\"$last_update_token\"";
+		$last_update_line = qq[\n"since": $last_update_token,];
+	}
+	my $query = <<"	END";
+		["query", "$git_work_tree", {$last_update_line
+			"fields": ["name"],
+			"expression": ["not", ["dirname", ".git"]]
+		}]
+	END
+
+	# Uncomment for debugging the watchman query
+	# open (my $fh, ">", ".git/watchman-query.json");
+	# print $fh $query;
+	# close $fh;
+
+	print CHLD_IN $query;
+	close CHLD_IN;
+	my $response = do {local $/; <CHLD_OUT>};
+
+	# Uncomment for debugging the watch response
+	# open ($fh, ">", ".git/watchman-response.json");
+	# print $fh $response;
+	# close $fh;
+
+	die "Watchman: command returned no output.\n" .
+	"Falling back to scanning...\n" if $response eq "";
+	die "Watchman: command returned invalid output: $response\n" .
+	"Falling back to scanning...\n" unless $response =~ /^\{/;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub is_work_tree_watched {
+	my ($output) = @_;
+	my $error = $output->{error};
+	if ($retry > 0 and $error and $error =~ m/unable to resolve root .* directory (.*) is not watched/) {
+		$retry--;
+		my $response = qx/watchman watch "$git_work_tree"/;
+		die "Failed to make watchman watch '$git_work_tree'.\n" .
+		    "Falling back to scanning...\n" if $? != 0;
+		$output = $json_pkg->new->utf8->decode($response);
+		$error = $output->{error};
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		# Uncomment for debugging watchman output
+		# open (my $fh, ">", ".git/watchman-output.out");
+		# close $fh;
+
+		# Watchman will always return all files on the first query so
+		# return the fast "everything is dirty" flag to git and do the
+		# Watchman query just to get it over with now so we won't pay
+		# the cost in git to look up each individual file.
+		my $o = watchman_clock();
+		$error = $output->{error};
+
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		output_result($o->{clock}, ("/"));
+		$last_update_token = $o->{clock};
+
+		eval { launch_watchman() };
+		return 0;
+	}
+
+	die "Watchman: $error.\n" .
+	"Falling back to scanning...\n" if $error;
+
+	return 1;
+}
+
+sub get_working_dir {
+	my $working_dir;
+	if ($^O =~ 'msys' || $^O =~ 'cygwin') {
+		$working_dir = Win32::GetCwd();
+		$working_dir =~ tr/\\/\//;
+	} else {
+		require Cwd;
+		$working_dir = Cwd::cwd();
+	}
+
+	return $working_dir;
+}
+</file>
+
+<file path="frontend-consultoria/.git/hooks/post-update.sample">
+#!/bin/sh
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+
+exec git update-server-info
+</file>
+
+<file path="frontend-consultoria/.git/hooks/pre-applypatch.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed
+# by applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-applypatch".
+
+. git-sh-setup
+precommit="$(git rev-parse --git-path hooks/pre-commit)"
+test -x "$precommit" && exec "$precommit" ${1+"$@"}
+:
+</file>
+
+<file path="frontend-consultoria/.git/hooks/pre-commit.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-commit".
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+	against=HEAD
+else
+	# Initial commit: diff against an empty tree object
+	against=$(git hash-object -t tree /dev/null)
+fi
+
+# If you want to allow non-ASCII filenames set this variable to true.
+allownonascii=$(git config --type=bool hooks.allownonascii)
+
+# Redirect output to stderr.
+exec 1>&2
+
+# Cross platform projects tend to avoid non-ASCII filenames; prevent
+# them from being added to the repository. We exploit the fact that the
+# printable range starts at the space character and ends with tilde.
+if [ "$allownonascii" != "true" ] &&
+	# Note that the use of brackets around a tr range is ok here, (it's
+	# even required, for portability to Solaris 10's /usr/bin/tr), since
+	# the square bracket bytes happen to fall in the designated range.
+	test $(git diff-index --cached --name-only --diff-filter=A -z $against |
+	  LC_ALL=C tr -d '[ -~]\0' | wc -c) != 0
+then
+	cat <<\EOF
+Error: Attempt to add a non-ASCII file name.
+
+This can cause problems if you want to work with people on other platforms.
+
+To be portable it is advisable to rename the file.
+
+If you know what you are doing you can disable this check using:
+
+  git config hooks.allownonascii true
+EOF
+	exit 1
+fi
+
+# If there are whitespace errors, print the offending file names and fail.
+exec git diff-index --check --cached $against --
+</file>
+
+<file path="frontend-consultoria/.git/hooks/pre-merge-commit.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git merge" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message to
+# stderr if it wants to stop the merge commit.
+#
+# To enable this hook, rename this file to "pre-merge-commit".
+
+. git-sh-setup
+test -x "$GIT_DIR/hooks/pre-commit" &&
+        exec "$GIT_DIR/hooks/pre-commit"
+:
+</file>
+
+<file path="frontend-consultoria/.git/hooks/pre-push.sample">
+#!/bin/sh
+
+# An example hook script to verify what is about to be pushed.  Called by "git
+# push" after it has checked the remote status, but before anything has been
+# pushed.  If this script exits with a non-zero status nothing will be pushed.
+#
+# This hook is called with the following parameters:
+#
+# $1 -- Name of the remote to which the push is being done
+# $2 -- URL to which the push is being done
+#
+# If pushing without using a named remote those arguments will be equal.
+#
+# Information about the commits which are being pushed is supplied as lines to
+# the standard input in the form:
+#
+#   <local ref> <local oid> <remote ref> <remote oid>
+#
+# This sample shows how to prevent push of commits where the log message starts
+# with "WIP" (work in progress).
+
+remote="$1"
+url="$2"
+
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+
+while read local_ref local_oid remote_ref remote_oid
+do
+	if test "$local_oid" = "$zero"
+	then
+		# Handle delete
+		:
+	else
+		if test "$remote_oid" = "$zero"
+		then
+			# New branch, examine all commits
+			range="$local_oid"
+		else
+			# Update to existing branch, examine new commits
+			range="$remote_oid..$local_oid"
+		fi
+
+		# Check for WIP commit
+		commit=$(git rev-list -n 1 --grep '^WIP' "$range")
+		if test -n "$commit"
+		then
+			echo >&2 "Found WIP commit in $local_ref, not pushing"
+			exit 1
+		fi
+	fi
+done
+
+exit 0
+</file>
+
+<file path="frontend-consultoria/.git/hooks/pre-rebase.sample">
+#!/bin/sh
+#
+# Copyright (c) 2006, 2008 Junio C Hamano
+#
+# The "pre-rebase" hook is run just before "git rebase" starts doing
+# its job, and can prevent the command from running by exiting with
+# non-zero status.
+#
+# The hook is called with the following parameters:
+#
+# $1 -- the upstream the series was forked from.
+# $2 -- the branch being rebased (or empty when rebasing the current branch).
+#
+# This sample shows how to prevent topic branches that are already
+# merged to 'next' branch from getting rebased, because allowing it
+# would result in rebasing already published history.
+
+publish=next
+basebranch="$1"
+if test "$#" = 2
+then
+	topic="refs/heads/$2"
+else
+	topic=`git symbolic-ref HEAD` ||
+	exit 0 ;# we do not interrupt rebasing detached HEAD
+fi
+
+case "$topic" in
+refs/heads/??/*)
+	;;
+*)
+	exit 0 ;# we do not interrupt others.
+	;;
+esac
+
+# Now we are dealing with a topic branch being rebased
+# on top of master.  Is it OK to rebase it?
+
+# Does the topic really exist?
+git show-ref -q "$topic" || {
+	echo >&2 "No such branch $topic"
+	exit 1
+}
+
+# Is topic fully merged to master?
+not_in_master=`git rev-list --pretty=oneline ^master "$topic"`
+if test -z "$not_in_master"
+then
+	echo >&2 "$topic is fully merged to master; better remove it."
+	exit 1 ;# we could allow it, but there is no point.
+fi
+
+# Is topic ever merged to next?  If so you should not be rebasing it.
+only_next_1=`git rev-list ^master "^$topic" ${publish} | sort`
+only_next_2=`git rev-list ^master           ${publish} | sort`
+if test "$only_next_1" = "$only_next_2"
+then
+	not_in_topic=`git rev-list "^$topic" master`
+	if test -z "$not_in_topic"
+	then
+		echo >&2 "$topic is already up to date with master"
+		exit 1 ;# we could allow it, but there is no point.
+	else
+		exit 0
+	fi
+else
+	not_in_next=`git rev-list --pretty=oneline ^${publish} "$topic"`
+	/usr/bin/perl -e '
+		my $topic = $ARGV[0];
+		my $msg = "* $topic has commits already merged to public branch:\n";
+		my (%not_in_next) = map {
+			/^([0-9a-f]+) /;
+			($1 => 1);
+		} split(/\n/, $ARGV[1]);
+		for my $elem (map {
+				/^([0-9a-f]+) (.*)$/;
+				[$1 => $2];
+			} split(/\n/, $ARGV[2])) {
+			if (!exists $not_in_next{$elem->[0]}) {
+				if ($msg) {
+					print STDERR $msg;
+					undef $msg;
+				}
+				print STDERR " $elem->[1]\n";
+			}
+		}
+	' "$topic" "$not_in_next" "$not_in_master"
+	exit 1
+fi
+
+<<\DOC_END
+
+This sample hook safeguards topic branches that have been
+published from being rewound.
+
+The workflow assumed here is:
+
+ * Once a topic branch forks from "master", "master" is never
+   merged into it again (either directly or indirectly).
+
+ * Once a topic branch is fully cooked and merged into "master",
+   it is deleted.  If you need to build on top of it to correct
+   earlier mistakes, a new topic branch is created by forking at
+   the tip of the "master".  This is not strictly necessary, but
+   it makes it easier to keep your history simple.
+
+ * Whenever you need to test or publish your changes to topic
+   branches, merge them into "next" branch.
+
+The script, being an example, hardcodes the publish branch name
+to be "next", but it is trivial to make it configurable via
+$GIT_DIR/config mechanism.
+
+With this workflow, you would want to know:
+
+(1) ... if a topic branch has ever been merged to "next".  Young
+    topic branches can have stupid mistakes you would rather
+    clean up before publishing, and things that have not been
+    merged into other branches can be easily rebased without
+    affecting other people.  But once it is published, you would
+    not want to rewind it.
+
+(2) ... if a topic branch has been fully merged to "master".
+    Then you can delete it.  More importantly, you should not
+    build on top of it -- other people may already want to
+    change things related to the topic as patches against your
+    "master", so if you need further changes, it is better to
+    fork the topic (perhaps with the same name) afresh from the
+    tip of "master".
+
+Let's look at this example:
+
+		   o---o---o---o---o---o---o---o---o---o "next"
+		  /       /           /           /
+		 /   a---a---b A     /           /
+		/   /               /           /
+	       /   /   c---c---c---c B         /
+	      /   /   /             \         /
+	     /   /   /   b---b C     \       /
+	    /   /   /   /             \     /
+    ---o---o---o---o---o---o---o---o---o---o---o "master"
+
+
+A, B and C are topic branches.
+
+ * A has one fix since it was merged up to "next".
+
+ * B has finished.  It has been fully merged up to "master" and "next",
+   and is ready to be deleted.
+
+ * C has not merged to "next" at all.
+
+We would want to allow C to be rebased, refuse A, and encourage
+B to be deleted.
+
+To compute (1):
+
+	git rev-list ^master ^topic next
+	git rev-list ^master        next
+
+	if these match, topic has not merged in next at all.
+
+To compute (2):
+
+	git rev-list master..topic
+
+	if this is empty, it is fully merged to "master".
+
+DOC_END
+</file>
+
+<file path="frontend-consultoria/.git/hooks/pre-receive.sample">
+#!/bin/sh
+#
+# An example hook script to make use of push options.
+# The example simply echoes all push options that start with 'echoback='
+# and rejects all pushes when the "reject" push option is used.
+#
+# To enable this hook, rename this file to "pre-receive".
+
+if test -n "$GIT_PUSH_OPTION_COUNT"
+then
+	i=0
+	while test "$i" -lt "$GIT_PUSH_OPTION_COUNT"
+	do
+		eval "value=\$GIT_PUSH_OPTION_$i"
+		case "$value" in
+		echoback=*)
+			echo "echo from the pre-receive-hook: ${value#*=}" >&2
+			;;
+		reject)
+			exit 1
+		esac
+		i=$((i + 1))
+	done
+fi
+</file>
+
+<file path="frontend-consultoria/.git/hooks/prepare-commit-msg.sample">
+#!/bin/sh
+#
+# An example hook script to prepare the commit log message.
+# Called by "git commit" with the name of the file that has the
+# commit message, followed by the description of the commit
+# message's source.  The hook's purpose is to edit the commit
+# message file.  If the hook fails with a non-zero status,
+# the commit is aborted.
+#
+# To enable this hook, rename this file to "prepare-commit-msg".
+
+# This hook includes three examples. The first one removes the
+# "# Please enter the commit message..." help message.
+#
+# The second includes the output of "git diff --name-status -r"
+# into the message, just before the "git status" output.  It is
+# commented because it doesn't cope with --amend or with squashed
+# commits.
+#
+# The third example adds a Signed-off-by line to the message, that can
+# still be edited.  This is rarely a good idea.
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+/usr/bin/perl -i.bak -ne 'print unless(m/^. Please enter the commit message/..m/^#$/)' "$COMMIT_MSG_FILE"
+
+# case "$COMMIT_SOURCE,$SHA1" in
+#  ,|template,)
+#    /usr/bin/perl -i.bak -pe '
+#       print "\n" . `git diff --cached --name-status -r`
+# 	 if /^#/ && $first++ == 0' "$COMMIT_MSG_FILE" ;;
+#  *) ;;
+# esac
+
+# SOB=$(git var GIT_COMMITTER_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# git interpret-trailers --in-place --trailer "$SOB" "$COMMIT_MSG_FILE"
+# if test -z "$COMMIT_SOURCE"
+# then
+#   /usr/bin/perl -i.bak -pe 'print "\n" if !$first_line++' "$COMMIT_MSG_FILE"
+# fi
+</file>
+
+<file path="frontend-consultoria/.git/hooks/push-to-checkout.sample">
+#!/bin/sh
+
+# An example hook script to update a checked-out tree on a git push.
+#
+# This hook is invoked by git-receive-pack(1) when it reacts to git
+# push and updates reference(s) in its repository, and when the push
+# tries to update the branch that is currently checked out and the
+# receive.denyCurrentBranch configuration variable is set to
+# updateInstead.
+#
+# By default, such a push is refused if the working tree and the index
+# of the remote repository has any difference from the currently
+# checked out commit; when both the working tree and the index match
+# the current commit, they are updated to match the newly pushed tip
+# of the branch. This hook is to be used to override the default
+# behaviour; however the code below reimplements the default behaviour
+# as a starting point for convenient modification.
+#
+# The hook receives the commit with which the tip of the current
+# branch is going to be updated:
+commit=$1
+
+# It can exit with a non-zero status to refuse the push (when it does
+# so, it must not modify the index or the working tree).
+die () {
+	echo >&2 "$*"
+	exit 1
+}
+
+# Or it can make any necessary changes to the working tree and to the
+# index to bring them to the desired state when the tip of the current
+# branch is updated to the new commit, and exit with a zero status.
+#
+# For example, the hook can simply run git read-tree -u -m HEAD "$1"
+# in order to emulate git fetch that is run in the reverse direction
+# with git push, as the two-tree form of git read-tree -u -m is
+# essentially the same as git switch or git checkout that switches
+# branches while keeping the local changes in the working tree that do
+# not interfere with the difference between the branches.
+
+# The below is a more-or-less exact translation to shell of the C code
+# for the default behaviour for git's push-to-checkout hook defined in
+# the push_to_deploy() function in builtin/receive-pack.c.
+#
+# Note that the hook will be executed from the repository directory,
+# not from the working tree, so if you want to perform operations on
+# the working tree, you will have to adapt your code accordingly, e.g.
+# by adding "cd .." or using relative paths.
+
+if ! git update-index -q --ignore-submodules --refresh
+then
+	die "Up-to-date check failed"
+fi
+
+if ! git diff-files --quiet --ignore-submodules --
+then
+	die "Working directory has unstaged changes"
+fi
+
+# This is a rough translation of:
+#
+#   head_has_history() ? "HEAD" : EMPTY_TREE_SHA1_HEX
+if git cat-file -e HEAD 2>/dev/null
+then
+	head=HEAD
+else
+	head=$(git hash-object -t tree --stdin </dev/null)
+fi
+
+if ! git diff-index --quiet --cached --ignore-submodules $head --
+then
+	die "Working directory has staged changes"
+fi
+
+if ! git read-tree -u -m "$commit"
+then
+	die "Could not update working tree to new HEAD"
+fi
+</file>
+
+<file path="frontend-consultoria/.git/hooks/sendemail-validate.sample">
+#!/bin/sh
+
+# An example hook script to validate a patch (and/or patch series) before
+# sending it via email.
+#
+# The hook should exit with non-zero status after issuing an appropriate
+# message if it wants to prevent the email(s) from being sent.
+#
+# To enable this hook, rename this file to "sendemail-validate".
+#
+# By default, it will only check that the patch(es) can be applied on top of
+# the default upstream branch without conflicts in a secondary worktree. After
+# validation (successful or not) of the last patch of a series, the worktree
+# will be deleted.
+#
+# The following config variables can be set to change the default remote and
+# remote ref that are used to apply the patches against:
+#
+#   sendemail.validateRemote (default: origin)
+#   sendemail.validateRemoteRef (default: HEAD)
+#
+# Replace the TODO placeholders with appropriate checks according to your
+# needs.
+
+validate_cover_letter () {
+	file="$1"
+	# TODO: Replace with appropriate checks (e.g. spell checking).
+	true
+}
+
+validate_patch () {
+	file="$1"
+	# Ensure that the patch applies without conflicts.
+	git am -3 "$file" || return
+	# TODO: Replace with appropriate checks for this patch
+	# (e.g. checkpatch.pl).
+	true
+}
+
+validate_series () {
+	# TODO: Replace with appropriate checks for the whole series
+	# (e.g. quick build, coding style checks, etc.).
+	true
+}
+
+# main -------------------------------------------------------------------------
+
+if test "$GIT_SENDEMAIL_FILE_COUNTER" = 1
+then
+	remote=$(git config --default origin --get sendemail.validateRemote) &&
+	ref=$(git config --default HEAD --get sendemail.validateRemoteRef) &&
+	worktree=$(mktemp --tmpdir -d sendemail-validate.XXXXXXX) &&
+	git worktree add -fd --checkout "$worktree" "refs/remotes/$remote/$ref" &&
+	git config --replace-all sendemail.validateWorktree "$worktree"
+else
+	worktree=$(git config --get sendemail.validateWorktree)
+fi || {
+	echo "sendemail-validate: error: failed to prepare worktree" >&2
+	exit 1
+}
+
+unset GIT_DIR GIT_WORK_TREE
+cd "$worktree" &&
+
+if grep -q "^diff --git " "$1"
+then
+	validate_patch "$1"
+else
+	validate_cover_letter "$1"
+fi &&
+
+if test "$GIT_SENDEMAIL_FILE_COUNTER" = "$GIT_SENDEMAIL_FILE_TOTAL"
+then
+	git config --unset-all sendemail.validateWorktree &&
+	trap 'git worktree remove -ff "$worktree"' EXIT &&
+	validate_series
+fi
+</file>
+
+<file path="frontend-consultoria/.git/hooks/update.sample">
+#!/bin/sh
+#
+# An example hook script to block unannotated tags from entering.
+# Called by "git receive-pack" with arguments: refname sha1-old sha1-new
+#
+# To enable this hook, rename this file to "update".
+#
+# Config
+# ------
+# hooks.allowunannotated
+#   This boolean sets whether unannotated tags will be allowed into the
+#   repository.  By default they won't be.
+# hooks.allowdeletetag
+#   This boolean sets whether deleting tags will be allowed in the
+#   repository.  By default they won't be.
+# hooks.allowmodifytag
+#   This boolean sets whether a tag may be modified after creation. By default
+#   it won't be.
+# hooks.allowdeletebranch
+#   This boolean sets whether deleting branches will be allowed in the
+#   repository.  By default they won't be.
+# hooks.denycreatebranch
+#   This boolean sets whether remotely creating branches will be denied
+#   in the repository.  By default this is allowed.
+#
+
+# --- Command line
+refname="$1"
+oldrev="$2"
+newrev="$3"
+
+# --- Safety check
+if [ -z "$GIT_DIR" ]; then
+	echo "Don't run this script from the command line." >&2
+	echo " (if you want, you could supply GIT_DIR then run" >&2
+	echo "  $0 <ref> <oldrev> <newrev>)" >&2
+	exit 1
+fi
+
+if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
+	echo "usage: $0 <ref> <oldrev> <newrev>" >&2
+	exit 1
+fi
+
+# --- Config
+allowunannotated=$(git config --type=bool hooks.allowunannotated)
+allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+denycreatebranch=$(git config --type=bool hooks.denycreatebranch)
+allowdeletetag=$(git config --type=bool hooks.allowdeletetag)
+allowmodifytag=$(git config --type=bool hooks.allowmodifytag)
+
+# check for no description
+projectdesc=$(sed -e '1q' "$GIT_DIR/description")
+case "$projectdesc" in
+"Unnamed repository"* | "")
+	echo "*** Project description file hasn't been set" >&2
+	exit 1
+	;;
+esac
+
+# --- Check types
+# if $newrev is 0000...0000, it's a commit to delete a ref.
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+if [ "$newrev" = "$zero" ]; then
+	newrev_type=delete
+else
+	newrev_type=$(git cat-file -t $newrev)
+fi
+
+case "$refname","$newrev_type" in
+	refs/tags/*,commit)
+		# un-annotated tag
+		short_refname=${refname##refs/tags/}
+		if [ "$allowunannotated" != "true" ]; then
+			echo "*** The un-annotated tag, $short_refname, is not allowed in this repository" >&2
+			echo "*** Use 'git tag [ -a | -s ]' for tags you want to propagate." >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,delete)
+		# delete tag
+		if [ "$allowdeletetag" != "true" ]; then
+			echo "*** Deleting a tag is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,tag)
+		# annotated tag
+		if [ "$allowmodifytag" != "true" ] && git rev-parse $refname > /dev/null 2>&1
+		then
+			echo "*** Tag '$refname' already exists." >&2
+			echo "*** Modifying a tag is not allowed in this repository." >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,commit)
+		# branch
+		if [ "$oldrev" = "$zero" -a "$denycreatebranch" = "true" ]; then
+			echo "*** Creating a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,delete)
+		# delete branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/remotes/*,commit)
+		# tracking branch
+		;;
+	refs/remotes/*,delete)
+		# delete tracking branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a tracking branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	*)
+		# Anything else (is there anything else?)
+		echo "*** Update hook: unknown type of update to ref $refname of type $newrev_type" >&2
+		exit 1
+		;;
+esac
+
+# --- Finished
+exit 0
+</file>
+
+<file path="frontend-consultoria/.git/info/exclude">
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+</file>
+
+<file path="frontend-consultoria/.git/logs/refs/heads/master">
+0000000000000000000000000000000000000000 a62b05b490af0834dd93307083677d0388300169 Maria Victória Scanholato <mariavictoriasds17@gmail.com> 1787098588 -0300	commit (initial): Initialize project using Create React App
+</file>
+
+<file path="frontend-consultoria/.git/logs/HEAD">
+0000000000000000000000000000000000000000 a62b05b490af0834dd93307083677d0388300169 Maria Victória Scanholato <mariavictoriasds17@gmail.com> 1787098588 -0300	commit (initial): Initialize project using Create React App
+</file>
+
+<file path="frontend-consultoria/.git/refs/heads/master">
+a62b05b490af0834dd93307083677d0388300169
+</file>
+
+<file path="frontend-consultoria/.git/COMMIT_EDITMSG">
+Initialize project using Create React App
+</file>
+
+<file path="frontend-consultoria/.git/config">
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+</file>
+
+<file path="frontend-consultoria/.git/description">
+Unnamed repository; edit this file 'description' to name the repository.
+</file>
+
+<file path="frontend-consultoria/.git/HEAD">
+ref: refs/heads/master
+</file>
+
+<file path="frontend-consultoria/public/index.html">
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Meu Closet Digital" />
+
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/logo.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+
+    <title>Meu Closet Digital</title>
+  </head>
+  <body>
+    <noscript>Você precisa habilitar o JavaScript para rodar esta aplicação.</noscript>
+    <div id="root"></div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </body>
+</html>
+</file>
+
+<file path="frontend-consultoria/public/manifest.json">
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
+</file>
+
+<file path="frontend-consultoria/public/robots.txt">
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+</file>
+
+<file path="frontend-consultoria/src/AbaDashboard.js">
+import React from 'react';
+
+const Icone = ({ tipo }) => {
+  const icones = {
+    cabide: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2cb3a6" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/>
+      </svg>
+    ),
+    calendario: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2cb3a6" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2"/>
+        <line x1="16" y1="2" x2="16" y2="6"/>
+        <line x1="8" y1="2" x2="8" y2="6"/>
+        <line x1="3" y1="10" x2="21" y2="10"/>
+      </svg>
+    ),
+    coracao: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2cb3a6" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+      </svg>
+    ),
+    estrela: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2cb3a6" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+      </svg>
+    )
+  };
+  return icones[tipo] || null;
+};
+
+const GraficoRosquinha = ({ dados, total }) => {
+  const CORES = ['#2cb3a6', '#66d4ca', '#222222', '#e0c38c', '#a8d5e2', '#1d8a80'];
+
+  if (!dados || dados.length === 0) {
+    return <p style={{ color: '#999', fontSize: '0.85rem', margin: '20px 0' }}>Sem dados para exibir.</p>;
+  }
+
+  let acumulado = 0;
+  const fatias = dados.map((item) => {
+    const porcentagem = total > 0 ? (item.value / total) * 100 : 0;
+    const inicio = acumulado;
+    acumulado += porcentagem;
+    return { name: item.name, porcentagem: Math.round(porcentagem), inicio, fim: acumulado };
+  });
+
+  const gradienteConico = fatias
+    .map((f, i) => `${CORES[i % CORES.length]} ${f.inicio}% ${f.fim}%`)
+    .join(', ');
+
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '15px', width: '100%', padding: '10px 0' }}>
+      <div
+        style={{
+          width: '110px',
+          height: '110px',
+          borderRadius: '50%',
+          background: fatias.length > 0 ? `conic-gradient(${gradienteConico})` : '#eee',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexShrink: 0
+        }}
+      >
+        <div
+          style={{
+            width: '65px',
+            height: '65px',
+            borderRadius: '50%',
+            background: '#ffffff',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+        >
+          <strong style={{ fontSize: '1.2rem', color: '#111', lineHeight: '1' }}>{total}</strong>
+          <span style={{ fontSize: '0.68rem', color: '#777' }}>peças</span>
+        </div>
+      </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', width: '100%', overflow: 'hidden' }}>
+        {fatias.map((f, i) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.82rem' }}>
+            <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: CORES[i % CORES.length], flexShrink: 0 }}></span>
+            <span style={{ color: '#444', fontWeight: '500', textTransform: 'capitalize', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+              {f.name}
+            </span>
+            <strong style={{ color: '#111', marginLeft: 'auto', flexShrink: 0 }}>{f.porcentagem}%</strong>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+function AbaDashboard({ pecas = [], registros = [], favoritos = [] }) {
+  const totalPecas = pecas.length;
+  const totalLooks = registros.length;
+
+  const favoritosDasPecas = pecas.filter(p => p.favorito || p.is_favorite).length;
+  const favoritosDosRegistros = registros.filter(r => r.favorito || r.is_favorite).length;
+  const totalFavoritos = (favoritos ? favoritos.length : 0) || favoritosDasPecas || favoritosDosRegistros;
+
+  const avaliacoesValidas = registros
+    .map((r) => {
+      const val = r.avaliacao ?? r.nota ?? r.rating ?? r.estrela ?? r.estrelas;
+      return Number(val);
+    })
+    .filter((v) => !isNaN(v) && v > 0);
+
+  const mediaAvaliacao = avaliacoesValidas.length > 0
+    ? (avaliacoesValidas.reduce((a, b) => a + b, 0) / avaliacoesValidas.length).toFixed(1)
+    : '0.0';
+
+  const pecasUsadasContagem = {};
+  registros.forEach((reg) => {
+    const listaPecas = reg.pecas || reg.items || reg.pecas_ids || [];
+    if (Array.isArray(listaPecas)) {
+      listaPecas.forEach((p) => {
+        const id = typeof p === 'object' ? p.id : p;
+        if (id) pecasUsadasContagem[id] = (pecasUsadasContagem[id] || 0) + 1;
+      });
+    }
+  });
+
+  const qtdPecasUsadas = Object.keys(pecasUsadasContagem).length;
+  const porcentagemUsadas = totalPecas > 0 ? Math.round((qtdPecasUsadas / totalPecas) * 100) : 0;
+
+  const agruparPor = (chave) => {
+    const contagem = pecas.reduce((acc, p) => {
+      const valor = p[chave] || 'Outros';
+      acc[valor] = (acc[valor] || 0) + 1;
+      return acc;
+    }, {});
+    return Object.entries(contagem).map(([name, value]) => ({ name, value }));
+  };
+
+  const dadosCategoria = agruparPor('categoria');
+  const dadosCores = agruparPor('cor');
+  const dadosEstilos = agruparPor('estilo');
+  const dadosClima = agruparPor('estacao');
+
+  const maxQtdCategoria = Math.max(...dadosCategoria.map((d) => d.value), 1);
+
+  const pecasComUso = pecas.map((p) => ({
+    ...p,
+    qtdUso: pecasUsadasContagem[p.id] || 0
+  }));
+
+  const pecasMaisUsadas = [...pecasComUso].sort((a, b) => b.qtdUso - a.qtdUso).slice(0, 5);
+  const pecasEsquecidas = pecasComUso.filter((p) => p.qtdUso <= 1).slice(0, 3);
+
+  const cardTop = {
+    flex: '1 1 200px',
+    background: '#fff',
+    border: '1px solid #d8f3f0',
+    borderRadius: '16px',
+    padding: '20px',
+    position: 'relative',
+    boxSizing: 'border-box'
+  };
+
+  const iconCircle = {
+    width: '38px',
+    height: '38px',
+    borderRadius: '50%',
+    background: '#b2ece7',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute',
+    top: '20px',
+    right: '20px'
+  };
+
+  const blockBox = {
+    flex: '1 1 340px',
+    background: '#fff',
+    border: '1px solid #d8f3f0',
+    borderRadius: '16px',
+    padding: '20px',
+    boxSizing: 'border-box',
+    overflow: 'hidden'
+  };
+
+  return (
+    <div style={{ padding: '10px 0', fontFamily: 'sans-serif' }}>
+      <h2 style={{ fontSize: '1.8rem', color: '#1a1a1a', margin: '0 0 5px 0' }}>Dashboard do Closet</h2>
+      <p style={{ color: '#666', marginBottom: '25px', fontSize: '0.95rem' }}>
+        Visão geral do seu guarda-roupa, das peças que você mais usa e dos looks avaliados.
+      </p>
+
+      <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', marginBottom: '25px' }}>
+        <div style={cardTop}>
+          <div style={iconCircle}><Icone tipo="cabide" /></div>
+          <span style={{ fontSize: '0.88rem', color: '#555', fontWeight: '500' }}>Peças no closet</span>
+          <h3 style={{ fontSize: '2.2rem', margin: '12px 0 4px 0', color: '#111' }}>{totalPecas}</h3>
+          <span style={{ fontSize: '0.78rem', color: '#777' }}>{porcentagemUsadas}% já foram usadas</span>
+        </div>
+
+        <div style={cardTop}>
+          <div style={iconCircle}><Icone tipo="calendario" /></div>
+          <span style={{ fontSize: '0.88rem', color: '#555', fontWeight: '500' }}>Looks registrados</span>
+          <h3 style={{ fontSize: '2.2rem', margin: '12px 0 4px 0', color: '#111' }}>{totalLooks}</h3>
+          <span style={{ fontSize: '0.78rem', color: '#777' }}>no Diário de Looks</span>
+        </div>
+
+        <div style={cardTop}>
+          <div style={iconCircle}><Icone tipo="coracao" /></div>
+          <span style={{ fontSize: '0.88rem', color: '#555', fontWeight: '500' }}>Looks favoritos</span>
+          <h3 style={{ fontSize: '2.2rem', margin: '12px 0 4px 0', color: '#111' }}>{totalFavoritos}</h3>
+          <span style={{ fontSize: '0.78rem', color: '#777' }}>combinações salvas</span>
+        </div>
+
+        <div style={cardTop}>
+          <div style={iconCircle}><Icone tipo="estrela" /></div>
+          <span style={{ fontSize: '0.88rem', color: '#555', fontWeight: '500' }}>Avaliação média</span>
+          <h3 style={{ fontSize: '2.2rem', margin: '12px 0 4px 0', color: '#111' }}>{mediaAvaliacao}</h3>
+          <span style={{ fontSize: '0.78rem', color: '#777' }}>de 5 estrelas</span>
+        </div>
+      </div>
+
+      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', marginBottom: '20px' }}>
+        {/* Gráfico de Barras por Categoria com Rolagem Segura */}
+        <div style={blockBox}>
+          <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', color: '#222' }}>Peças por categoria</h4>
+          <p style={{ margin: '0 0 20px 0', fontSize: '0.85rem', color: '#777' }}>Quantidade de peças cadastradas em cada categoria.</p>
+
+          <div style={{ width: '100%', overflowX: 'auto', paddingBottom: '10px' }}>
+            <div style={{ display: 'flex', alignItems: 'flex-end', gap: '12px', height: '140px', minWidth: `${dadosCategoria.length * 60}px`, paddingBottom: '30px', borderBottom: '1px solid #eee' }}>
+              {dadosCategoria.map((cat, idx) => {
+                const alturaPorcentagem = (cat.value / maxQtdCategoria) * 100;
+                return (
+                  <div key={idx} style={{ flex: '1 1 0', minWidth: '45px', display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%', justifyContent: 'flex-end', position: 'relative' }}>
+                    <span style={{ fontSize: '0.75rem', fontWeight: 'bold', color: '#2cb3a6', marginBottom: '4px' }}>{cat.value}</span>
+                    <div style={{ width: '28px', height: `${alturaPorcentagem}%`, background: '#2cb3a6', borderRadius: '6px 6px 0 0', minHeight: '6px' }} />
+                    <span style={{ position: 'absolute', bottom: '-25px', fontSize: '0.72rem', color: '#666', textTransform: 'capitalize', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: '55px', textAlign: 'center' }}>
+                      {cat.name}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div style={blockBox}>
+          <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', color: '#222' }}>Cores do closet</h4>
+          <p style={{ margin: '0 0 15px 0', fontSize: '0.85rem', color: '#777' }}>Paleta predominante do guarda-roupa.</p>
+          <GraficoRosquinha dados={dadosCores} total={totalPecas} />
+        </div>
+      </div>
+
+      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', marginBottom: '20px' }}>
+        <div style={blockBox}>
+          <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', color: '#222' }}>Estilos</h4>
+          <p style={{ margin: '0 0 15px 0', fontSize: '0.85rem', color: '#777' }}>Como o seu closet se divide por estilo.</p>
+          <GraficoRosquinha dados={dadosEstilos} total={totalPecas} />
+        </div>
+
+        <div style={blockBox}>
+          <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', color: '#222' }}>Clima ideal</h4>
+          <p style={{ margin: '0 0 15px 0', fontSize: '0.85rem', color: '#777' }}>Peças disponíveis para cada estação.</p>
+          <GraficoRosquinha dados={dadosClima} total={totalPecas} />
+        </div>
+      </div>
+
+      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+        <div style={blockBox}>
+          <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', color: '#222' }}>Peças mais usadas</h4>
+          <p style={{ margin: '0 0 15px 0', fontSize: '0.85rem', color: '#777' }}>Com base nos registros do Diário de Looks.</p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            {pecasMaisUsadas.length > 0 ? (
+              pecasMaisUsadas.map((peca) => (
+                <div key={peca.id} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 14px', background: '#f4fbfb', borderRadius: '14px', border: '1px solid #e1f5f3' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <img src={peca.imagem || peca.foto || peca.url || 'https://via.placeholder.com/50'} alt={peca.nome} style={{ width: '45px', height: '45px', borderRadius: '10px', objectFit: 'cover' }} />
+                    <div>
+                      <strong style={{ fontSize: '0.88rem', color: '#222' }}>{peca.nome || `${peca.categoria} - ${peca.cor}`}</strong>
+                      <p style={{ margin: '2px 0 0 0', fontSize: '0.78rem', color: '#666' }}>{peca.estilo || 'Casual'} · {peca.estacao || 'Todas'}</p>
+                    </div>
+                  </div>
+                  <span style={{ background: '#b2ece7', color: '#005f56', padding: '4px 10px', borderRadius: '12px', fontWeight: 'bold', fontSize: '0.85rem' }}>{peca.qtdUso}x</span>
+                </div>
+              ))
+            ) : (
+              <p style={{ fontSize: '0.88rem', color: '#999' }}>Nenhuma peça registrada ainda.</p>
+            )}
+          </div>
+        </div>
+
+        <div style={blockBox}>
+          <h4 style={{ margin: '0 0 5px 0', fontSize: '1.1rem', color: '#222' }}>Peças esquecidas</h4>
+          <p style={{ margin: '0 0 15px 0', fontSize: '0.85rem', color: '#777' }}>Usadas uma vez ou nunca. Que tal incluir no próximo look?</p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            {pecasEsquecidas.length > 0 ? (
+              pecasEsquecidas.map((peca) => (
+                <div key={peca.id} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 14px', background: '#fcfcfc', borderRadius: '14px', border: '1px solid #eee' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <img src={peca.imagem || peca.foto || peca.url || 'https://via.placeholder.com/50'} alt={peca.nome} style={{ width: '45px', height: '45px', borderRadius: '10px', objectFit: 'cover' }} />
+                    <div>
+                      <strong style={{ fontSize: '0.88rem', color: '#222' }}>{peca.nome || `${peca.categoria} - ${peca.cor}`}</strong>
+                      <p style={{ margin: '2px 0 0 0', fontSize: '0.78rem', color: '#666' }}>{peca.estilo || 'Casual'} · {peca.estacao || 'Todas'}</p>
+                    </div>
+                  </div>
+                  <span style={{ background: '#f0f0f0', color: '#666', padding: '4px 10px', borderRadius: '12px', fontWeight: 'bold', fontSize: '0.85rem' }}>{peca.qtdUso}x</span>
+                </div>
+              ))
+            ) : (
+              <p style={{ fontSize: '0.88rem', color: '#999' }}>Nenhuma peça esquecida!</p>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default AbaDashboard;
+</file>
+
+<file path="frontend-consultoria/src/AbaDiario.js">
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+function AbaDiario({ pecas }) {
+  const [dataSelecionada, setDataSelecionada] = useState(new Date());
+  const [registros, setRegistros] = useState([]);
+  const [pecasSelecionadasIds, setPecasSelecionadasIds] = useState([]);
+  const [avaliacao, setAvaliacao] = useState(5);
+  const [comentario, setComentario] = useState('');
+  const [status, setStatus] = useState('');
+
+  const anoAtual = dataSelecionada.getFullYear();
+  const mesAtual = dataSelecionada.getMonth();
+
+  const formatarDataIso = (d) => {
+    const ano = d.getFullYear();
+    const mes = String(d.getMonth() + 1).padStart(2, '0');
+    const dia = String(d.getDate()).padStart(2, '0');
+    return `${ano}-${mes}-${dia}`;
+  };
+
+  const dataFormatada = formatarDataIso(dataSelecionada);
+
+  useEffect(() => {
+    carregarDiario();
+  }, []);
+
+  const carregarDiario = () => {
+    const token = localStorage.getItem('token');
+    const headers = token ? { Authorization: `Token ${token}` } : {};
+
+    axios.get('http://127.0.0.1:8000/api/diario/', { headers })
+      .then(res => setRegistros(Array.isArray(res.data) ? res.data : []))
+      .catch(err => console.error("Erro ao carregar diário:", err));
+  };
+
+  const registroDoDia = registros.find(r => r.data === dataFormatada);
+
+  useEffect(() => {
+    if (registroDoDia) {
+      if (registroDoDia.pecas) {
+        setPecasSelecionadasIds(registroDoDia.pecas);
+      } else if (registroDoDia.pecas_detalhes) {
+        setPecasSelecionadasIds(registroDoDia.pecas_detalhes.map(p => p.id));
+      }
+      setAvaliacao(registroDoDia.avaliacao || 5);
+      setComentario(registroDoDia.comentario || '');
+    } else {
+      setPecasSelecionadasIds([]);
+      setAvaliacao(5);
+      setComentario('');
+    }
+  }, [dataFormatada, registros]);
+
+  const handleTogglePeca = (id) => {
+    if (pecasSelecionadasIds.includes(id)) {
+      setPecasSelecionadasIds(pecasSelecionadasIds.filter(item => item !== id));
+    } else {
+      setPecasSelecionadasIds([...pecasSelecionadasIds, id]);
+    }
+  };
+
+  const handleSalvarDiario = () => {
+    setStatus('Salvando...');
+    const token = localStorage.getItem('token');
+    const headers = token ? { Authorization: `Token ${token}` } : {};
+
+    const payload = {
+      data: dataFormatada,
+      pecas: pecasSelecionadasIds,
+      avaliacao: avaliacao,
+      comentario: comentario
+    };
+
+    if (registroDoDia) {
+      axios.patch(`http://127.0.0.1:8000/api/diario/${registroDoDia.id}/`, payload, { headers })
+        .then(() => {
+          setStatus('Atualizado com sucesso!');
+          carregarDiario();
+        })
+        .catch(err => {
+          console.error("Erro no patch:", err.response?.data || err);
+          setStatus('Erro ao atualizar.');
+        });
+    } else {
+      axios.post('http://127.0.0.1:8000/api/diario/', payload, { headers })
+        .then(() => {
+          setStatus('Salvo com sucesso!');
+          carregarDiario();
+        })
+        .catch(err => {
+          console.error("Erro no post:", err.response?.data || err);
+          setStatus('Erro ao salvar.');
+        });
+    }
+  };
+
+  const primeiroDiaDoMes = new Date(anoAtual, mesAtual, 1).getDay();
+  const diasNoMes = new Date(anoAtual, mesAtual + 1, 0).getDate();
+
+  const renderDiasCalendario = () => {
+    const celulas = [];
+    for (let i = 0; i < primeiroDiaDoMes; i++) {
+      celulas.push(<div key={`empty-${i}`} style={{ background: '#fdfdfd', border: '1px solid #f0f0f0', borderRadius: '8px', minHeight: '65px' }} />);
+    }
+
+    for (let dia = 1; dia <= diasNoMes; dia++) {
+      const dataCelula = new Date(anoAtual, mesAtual, dia);
+      const isoData = formatarDataIso(dataCelula);
+      const eHoje = isoData === dataFormatada;
+      const reg = registros.find(r => r.data === isoData);
+
+      celulas.push(
+        <div
+          key={dia}
+          onClick={() => {
+            setDataSelecionada(dataCelula);
+            setStatus('');
+          }}
+          style={{
+            border: eHoje ? '2px solid #000000' : '1px solid #a8dcd9',
+            background: eHoje ? '#e3f7f6' : '#ffffff',
+            borderRadius: '8px',
+            padding: '4px',
+            minHeight: '65px',
+            cursor: 'pointer',
+            display: 'flex',
+            flexDirection: 'column',
+            justify: 'space-between',
+            boxSizing: 'border-box'
+          }}
+        >
+          <span style={{ fontSize: '0.75rem', fontWeight: 'bold', color: '#000000' }}>{dia}</span>
+          <div style={{ display: 'flex', gap: '2px', flexWrap: 'wrap', overflow: 'hidden', maxHeight: '40px' }}>
+            {reg && reg.pecas_detalhes && reg.pecas_detalhes.map((p, idx) => (
+              <img
+                key={idx}
+                src={p.imagem?.startsWith('http') ? p.imagem : `http://127.0.0.1:8000${p.imagem}`}
+                alt={p.categoria}
+                style={{ width: '18px', height: '18px', objectFit: 'cover', borderRadius: '3px' }}
+              />
+            ))}
+          </div>
+        </div>
+      );
+    }
+    return celulas;
+  };
+
+  const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+
+  return (
+    <div style={{ background: '#ffffff', padding: '30px', borderRadius: '20px', border: '1px solid #a8dcd9', boxShadow: '0 10px 25px rgba(0,0,0,0.03)' }}>
+      <h2 style={{ color: '#000000', marginTop: 0 }}>Agenda do Closet</h2>
+      <p style={{ color: '#555555', fontSize: '0.9rem' }}>Selecione um dia para registrar as roupas que você usou:</p>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '30px', marginTop: '20px' }}>
+        <div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+            <button
+              onClick={() => setDataSelecionada(new Date(anoAtual, mesAtual - 1, 1))}
+              style={{ background: '#a8dcd9', border: 'none', borderRadius: '6px', padding: '4px 10px', cursor: 'pointer', fontWeight: 'bold' }}
+            >
+              &lt;
+            </button>
+            <strong style={{ fontSize: '1rem', color: '#000000' }}>{meses[mesAtual]} {anoAtual}</strong>
+            <button
+              onClick={() => setDataSelecionada(new Date(anoAtual, mesAtual + 1, 1))}
+              style={{ background: '#a8dcd9', border: 'none', borderRadius: '6px', padding: '4px 10px', cursor: 'pointer', fontWeight: 'bold' }}
+            >
+              &gt;
+            </button>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '4px', textAlign: 'center', fontWeight: 'bold', fontSize: '0.75rem', marginBottom: '6px', color: '#555' }}>
+            <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '4px' }}>
+            {renderDiasCalendario()}
+          </div>
+        </div>
+
+        <div>
+          <h3 style={{ margin: '0 0 10px 0', fontSize: '1.1rem', color: '#000000' }}>
+            Data: {dataSelecionada.toLocaleDateString('pt-BR')}
+          </h3>
+
+          <p style={{ fontSize: '0.85rem', fontWeight: '600', color: '#333' }}>Selecione as peças para esta data:</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', maxHeight: '160px', overflowY: 'auto', paddingRight: '5px' }}>
+            {pecas.map(peca => {
+              const selecionada = pecasSelecionadasIds.includes(peca.id);
+              const imgUrl = peca.imagem?.startsWith('http') ? peca.imagem : `http://127.0.0.1:8000${peca.imagem}`;
+              return (
+                <div
+                  key={peca.id}
+                  onClick={() => handleTogglePeca(peca.id)}
+                  style={{
+                    border: selecionada ? '2px solid #000000' : '1px solid #a8dcd9',
+                    borderRadius: '10px',
+                    padding: '6px',
+                    cursor: 'pointer',
+                    background: selecionada ? '#a8dcd9' : '#ffffff',
+                    textAlign: 'center'
+                  }}
+                >
+                  <img src={imgUrl} alt={peca.categoria} style={{ width: '100%', height: '50px', objectFit: 'cover', borderRadius: '6px' }} />
+                  <span style={{ fontSize: '0.7rem', display: 'block', textTransform: 'capitalize', fontWeight: 'bold' }}>{peca.categoria}</span>
+                </div>
+              );
+            })}
+          </div>
+
+          <div style={{ marginTop: '12px' }}>
+            <label style={{ fontSize: '0.8rem', fontWeight: 'bold', display: 'block', marginBottom: '4px', color: '#333' }}>
+              Avaliação do Look:
+            </label>
+            <select
+              value={avaliacao}
+              onChange={(e) => setAvaliacao(Number(e.target.value))}
+              style={{ width: '100%', padding: '6px 10px', borderRadius: '8px', border: '1px solid #a8dcd9', fontSize: '0.85rem', outline: 'none' }}
+            >
+              <option value={1}>⭐ (1/5)</option>
+              <option value={2}>⭐⭐ (2/5)</option>
+              <option value={3}>⭐⭐⭐ (3/5)</option>
+              <option value={4}>⭐⭐⭐⭐ (4/5)</option>
+              <option value={5}>⭐⭐⭐⭐⭐ (5/5)</option>
+            </select>
+          </div>
+
+          <div style={{ marginTop: '10px' }}>
+            <label style={{ fontSize: '0.8rem', fontWeight: 'bold', display: 'block', marginBottom: '4px', color: '#333' }}>
+              Anotações:
+            </label>
+            <textarea
+              value={comentario}
+              onChange={(e) => setComentario(e.target.value)}
+              placeholder="Ex: Achei a sobreposição bem estilosa"
+              style={{
+                width: '100%',
+                height: '45px',
+                padding: '6px 10px',
+                borderRadius: '8px',
+                border: '1px solid #a8dcd9',
+                fontSize: '0.8rem',
+                boxSizing: 'border-box',
+                resize: 'none',
+                outline: 'none',
+                fontFamily: 'inherit'
+              }}
+            />
+          </div>
+
+          <button
+            onClick={handleSalvarDiario}
+            style={{ width: '100%', marginTop: '15px', background: '#a8dcd9', color: '#000000', border: 'none', padding: '12px', borderRadius: '10px', fontWeight: 'bold', cursor: 'pointer' }}
+          >
+            {registroDoDia ? 'Atualizar Look do Dia' : 'Salvar Look do Dia'}
+          </button>
+
+          {status && <p style={{ fontSize: '0.85rem', fontWeight: 'bold', marginTop: '10px', textAlign: 'center' }}>{status}</p>}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default AbaDiario;
+</file>
+
+<file path="frontend-consultoria/src/App.css">
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.ia-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+  border: 1px solid #eaeaea;
+}
+
+.ia-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn-clima {
+  flex: 1;
+  min-width: 120px;
+  padding: 12px 18px;
+  border: 1px solid #333;
+  background: #fff;
+  color: #333;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-clima:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* Resultado do Look */
+.look-result {
+  margin-top: 25px;
+  padding: 20px;
+  background: #fafafa;
+  border-left: 4px solid #111;
+  border-radius: 4px;
+}
+
+.look-result h3 {
+  font-size: 1.1rem;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.look-result p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Grid do Guarda-Roupa */
+.section-title {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.wardrobe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.peca-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  border: 1px solid #f0f0f0;
+  transition: transform 0.2s ease;
+}
+
+.peca-card:hover {
+  transform: translateY(-4px);
+}
+
+.peca-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.peca-info {
+  padding: 12px;
+}
+
+.peca-info h4 {
+  font-size: 0.95rem;
+  color: #111;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+
+.peca-info span {
+  display: inline-block;
+  font-size: 0.8rem;
+  background: #f1f3f5;
+  color: #495057;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-top: 4px;
+}
+
+.provador-container {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  margin: 20px auto;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.btn-aba {
+  padding: 10px 20px;
+  border: 2px solid #5a1846;
+  background-color: #ffffff;
+  color: #5a1846;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.btn-aba:hover {
+  background-color: #f3e8f1;
+}
+
+.btn-aba.ativa {
+  background-color: #5a1846;
+  color: #ffffff;
+}
+</file>
+
+<file path="frontend-consultoria/src/App.js">
+import React, { useState, useEffect, useRef } from 'react';
+import axios from 'axios';
+import './App.css';
+import AbaDiario from './AbaDiario';
+import AbaDashboard from './AbaDashboard';
+
+const LOGO_MARCA_URL = "/logo.png";
+
+axios.defaults.withCredentials = true;
+
+const API_URL = 'http://127.0.0.1:8000/api';
+
+function App() {
+  const formRef = useRef(null);
+
+  const [abaAtiva, setAbaAtiva] = useState('recomendacao');
+  const [usuario, setUsuario] = useState(null);
+  const [modoAuth, setModoAuth] = useState('login');
+  const [mostrarModalGoogle, setMostrarModalGoogle] = useState(false);
+  const [modoOutraContaGoogle, setModoOutraContaGoogle] = useState(false);
+  const [novoNomeGoogle, setNovoNomeGoogle] = useState('');
+  const [novoEmailGoogle, setNovoEmailGoogle] = useState('');
+
+  const contasGoogleExemplo = [
+    {
+      nome: "Maria Victoria Scanholato",
+      email: "maviiscanholato@gmail.com",
+      foto: "https://ui-avatars.com/api/?name=Maria+Victoria&background=e8f0fe&color=1a73e8&bold=true"
+    },
+    {
+      nome: "Maria Victoria Scanholato",
+      email: "mariavictoriasds17@gmail.com",
+      foto: "https://ui-avatars.com/api/?name=Maria+Scanholato&background=fce8e6&color=c5221f&bold=true"
+    }
+  ];
+
+  const [authUsername, setAuthUsername] = useState('');
+  const [authPassword, setAuthPassword] = useState('');
+  const [authNovaSenha, setAuthNovaSenha] = useState('');
+  const [authEmail, setAuthEmail] = useState('');
+  const [authErro, setAuthErro] = useState('');
+  const [authSucesso, setAuthSucesso] = useState('');
+
+  const [pecas, setPecas] = useState([]);
+  const [looks, setLooks] = useState([]);
+
+  const [categoria, setCategoria] = useState('');
+  const [cor, setCor] = useState('');
+  const [estilo, setEstilo] = useState('');
+  const [clima, setClima] = useState('');
+  const [imagem, setImagem] = useState(null);
+  const [statusCadastro, setStatusCadastro] = useState('');
+
+  const [pecaEmEdicao, setPecaEmEdicao] = useState(null);
+  const [editCategoria, setEditCategoria] = useState('');
+  const [editCor, setEditCor] = useState('');
+  const [editEstilo, setEditEstilo] = useState('');
+  const [editClima, setEditClima] = useState('');
+  const [editImagem, setEditImagem] = useState(null);
+
+  const [lookGerado, setLookGerado] = useState(null);
+  const [carregandoLook, setCarregandoLook] = useState(false);
+  const [favoritos, setFavoritos] = useState([]);
+
+  useEffect(() => {
+    verificarUsuario();
+  }, []);
+
+  const verificarUsuario = () => {
+    axios.get(`${API_URL}/auth/me/`)
+      .then(res => {
+        if (res.data.autenticado) {
+          setUsuario(res.data.user);
+          carregarDados();
+        } else {
+          setUsuario(null);
+        }
+      })
+      .catch(() => setUsuario(null));
+  };
+
+  const carregarDados = () => {
+    axios.get(`${API_URL}/pecas/`)
+      .then(res => setPecas(Array.isArray(res.data) ? res.data : []))
+      .catch(err => console.error("Erro ao buscar peças:", err));
+
+    axios.get(`${API_URL}/diario/`)
+      .then(res => setLooks(Array.isArray(res.data) ? res.data : []))
+      .catch(() => {
+        axios.get(`${API_URL}/looks/`)
+          .then(res => setLooks(Array.isArray(res.data) ? res.data : []))
+          .catch(err => console.error("Erro ao buscar histórico de looks:", err));
+      });
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    setAuthErro('');
+    setAuthSucesso('');
+    axios.post(`${API_URL}/auth/login/`, { username: authUsername, password: authPassword })
+      .then(res => {
+        setUsuario(res.data.user);
+        setAuthUsername('');
+        setAuthPassword('');
+        carregarDados();
+      })
+      .catch(err => setAuthErro(err.response?.data?.erro || 'Erro ao realizar login.'));
+  };
+
+  const handleCadastro = (e) => {
+    e.preventDefault();
+    setAuthErro('');
+    setAuthSucesso('');
+    axios.post(`${API_URL}/auth/cadastrar/`, { username: authUsername, password: authPassword, email: authEmail })
+      .then(res => {
+        setUsuario(res.data.user);
+        setAuthUsername('');
+        setAuthPassword('');
+        setAuthEmail('');
+        carregarDados();
+      })
+      .catch(err => setAuthErro(err.response?.data?.erro || 'Erro ao realizar cadastro.'));
+  };
+
+  const handleAlterarSenha = (e) => {
+    e.preventDefault();
+    setAuthErro('');
+    setAuthSucesso('');
+    axios.post(`${API_URL}/auth/alterar-senha/`, { senha_atual: authPassword, nova_senha: authNovaSenha })
+      .then(res => {
+        setAuthSucesso(res.data.mensagem);
+        setAuthPassword('');
+        setAuthNovaSenha('');
+      })
+      .catch(err => setAuthErro(err.response?.data?.erro || 'Erro ao alterar senha.'));
+  };
+
+  const handleGoogleLogin = () => {
+    setModoOutraContaGoogle(false);
+    setMostrarModalGoogle(true);
+  };
+
+  const selecionarContaGoogle = (conta) => {
+    setUsuario({ username: conta.nome });
+    localStorage.setItem("usuario", JSON.stringify({ username: conta.nome }));
+    setMostrarModalGoogle(false);
+    setModoOutraContaGoogle(false);
+
+    if (typeof carregarDados === "function") {
+      carregarDados();
+    }
+  };
+
+  const handleEntrarComOutraContaGoogle = (e) => {
+    e.preventDefault();
+    if (!novoNomeGoogle) return;
+    selecionarContaGoogle({ nome: novoNomeGoogle, email: novoEmailGoogle || `${novoNomeGoogle.toLowerCase().replace(/\s+/g, '')}@gmail.com` });
+    setNovoNomeGoogle('');
+    setNovoEmailGoogle('');
+  };
+
+  const handleLogout = () => {
+    axios.post(`${API_URL}/auth/logout/`)
+      .then(() => {
+        setUsuario(null);
+        setPecas([]);
+        setLooks([]);
+        setLookGerado(null);
+        setModoAuth('login');
+      })
+      .catch(err => console.error("Erro ao sair:", err));
+  };
+
+  const handleCadastrarPeca = (e) => {
+    e.preventDefault();
+    setStatusCadastro('Enviando dados...');
+
+    if (!categoria || !cor) {
+      setStatusCadastro('Por favor, preencha Categoria e Cor.');
+      return;
+    }
+
+    if (!imagem) {
+      setStatusCadastro('Por favor, selecione uma imagem para a peça.');
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('categoria', categoria);
+    formData.append('cor', cor);
+    formData.append('estilo', estilo);
+    formData.append('clima', clima);
+    formData.append('imagem', imagem);
+
+    axios.post(`${API_URL}/pecas/`, formData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    })
+    .then(() => {
+      setStatusCadastro('Peça cadastrada com sucesso!');
+      setCategoria('');
+      setCor('');
+      setEstilo('');
+      setClima('');
+      setImagem(null);
+
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+
+      carregarDados();
+    })
+    .catch(error => {
+      console.error('Erro no cadastro:', error.response?.data);
+      const detalhe = error.response?.data
+        ? JSON.stringify(error.response.data)
+        : 'Verifique se o Django está ativo.';
+      setStatusCadastro(`Erro ao cadastrar: ${detalhe}`);
+    });
+  };
+
+  const handleDeletarPeca = (id) => {
+    if (window.confirm('Tem certeza que deseja excluir esta peça?')) {
+      axios.delete(`${API_URL}/pecas/${id}/`)
+        .then(() => carregarDados())
+        .catch(err => console.error("Erro ao deletar peça:", err));
+    }
+  };
+
+  const abrirEdicao = (peca) => {
+    setPecaEmEdicao(peca);
+    setEditCategoria(peca.categoria);
+    setEditCor(peca.cor);
+    setEditEstilo(peca.estilo);
+    setEditClima(peca.clima);
+    setEditImagem(null);
+  };
+
+  const handleSalvarEdicao = (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    formData.append('categoria', editCategoria);
+    formData.append('cor', editCor);
+    formData.append('estilo', editEstilo);
+    formData.append('clima', editClima);
+
+    if (editImagem) {
+      formData.append('imagem', editImagem);
+    }
+
+    axios.patch(`${API_URL}/pecas/${pecaEmEdicao.id}/`, formData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    })
+    .then(() => {
+      setPecaEmEdicao(null);
+      carregarDados();
+    })
+    .catch(err => console.error("Erro ao editar peça:", err));
+  };
+
+  const handleGerarLook = (climaFiltro) => {
+    setCarregandoLook(true);
+    setLookGerado(null);
+
+    axios.post(`${API_URL}/looks/gerar_look/`, {
+      clima: climaFiltro
+    })
+    .then(res => {
+      setLookGerado(res.data.look);
+      carregarDados();
+    })
+    .catch(err => {
+      alert(err.response?.data?.erro || "Erro ao gerar look.");
+    })
+    .finally(() => setCarregandoLook(false));
+  };
+
+  const handleFavoritarLook = (look) => {
+    if (!favoritos.some(fav => fav.nome_look === look.nome_look)) {
+      setFavoritos([...favoritos, look]);
+      alert("Look adicionado aos favoritos!");
+    } else {
+      alert("Este look já está nos seus favoritos.");
+    }
+  };
+
+  const limparMensagemStatus = () => {
+    if (statusCadastro) setStatusCadastro('');
+  };
+
+  return (
+    <div style={{ minHeight: '100vh', background: 'linear-gradient(180deg, #f4fbfb 0%, #ffffff 100%)', padding: '40px 20px', fontFamily: 'Segoe UI, sans-serif' }}>
+      <div style={{ maxWidth: '850px', margin: '0 auto' }}>
+
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#ffffff', padding: '16px 24px', borderRadius: '16px', marginBottom: '25px', boxShadow: '0 10px 25px rgba(168, 220, 217, 0.25)', border: '1px solid #a8dcd9' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+            {LOGO_MARCA_URL && (
+              <img src={LOGO_MARCA_URL} alt="Logo da Marca" style={{ height: '55px', transform: 'scale(1.1)', objectFit: 'contain' }} />
+            )}
+            <h1 style={{ margin: 0, fontSize: '1.3rem', color: '#000000', fontWeight: '700', letterSpacing: '-0.3px' }}>
+              Meu Closet Digital
+            </h1>
+          </div>
+
+          {usuario ? (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <span style={{ fontWeight: '600', color: '#000000', fontSize: '0.95rem' }}>Olá, {usuario.username}!</span>
+              <button onClick={handleLogout} style={btnExcluir}>Sair</button>
+            </div>
+          ) : (
+            <span style={{ fontSize: '0.85rem', color: '#000000' }}></span>
+          )}
+        </div>
+
+        {!usuario || modoAuth === 'senha' ? (
+          <div style={{ background: '#ffffff', border: '1px solid #a8dcd9', padding: '35px', borderRadius: '20px', maxWidth: '400px', margin: '30px auto', boxShadow: '0 12px 30px rgba(0, 0, 0, 0.05)' }}>
+
+            <div style={{ textAlign: 'center', marginBottom: '25px' }}>
+              {LOGO_MARCA_URL && (
+                <img src={LOGO_MARCA_URL} alt="Logo da Marca" style={{ height: '115px', transform: 'scale(1.25)', objectFit: 'contain', marginBottom: '10px' }} />
+              )}
+              <h2 style={{ color: '#000000', margin: 0, fontSize: '1.4rem' }}>
+                {modoAuth === 'login' && 'Entrar na Conta'}
+                {modoAuth === 'cadastro' && 'Criar Nova Conta'}
+                {modoAuth === 'senha' && 'Alterar Senha'}
+              </h2>
+            </div>
+
+            {modoAuth === 'senha' && (
+              <form onSubmit={handleAlterarSenha}>
+                <div style={{ marginBottom: '15px' }}>
+                  <label style={labelStyle}>Senha Atual:</label>
+                  <input type="password" value={authPassword} onChange={e => setAuthPassword(e.target.value)} style={inputStyle} required />
+                </div>
+                <div style={{ marginBottom: '20px' }}>
+                  <label style={labelStyle}>Nova Senha:</label>
+                  <input type="password" value={authNovaSenha} onChange={e => setAuthNovaSenha(e.target.value)} style={inputStyle} required />
+                </div>
+                <button type="submit" style={btnPrincipal}>Salvar Nova Senha</button>
+                <button type="button" onClick={() => setModoAuth('login')} style={{ ...btnCancelar, marginTop: '10px' }}>
+                  Voltar para o Login
+                </button>
+              </form>
+            )}
+
+            {modoAuth !== 'senha' && (
+              <form onSubmit={modoAuth === 'cadastro' ? handleCadastro : handleLogin}>
+                <div style={{ marginBottom: '15px' }}>
+                  <label style={labelStyle}>Usuário:</label>
+                  <input type="text" value={authUsername} onChange={e => setAuthUsername(e.target.value)} style={inputStyle} required placeholder="Seu usuário" />
+                </div>
+
+                {modoAuth === 'cadastro' && (
+                  <div style={{ marginBottom: '15px' }}>
+                    <label style={labelStyle}>E-mail (opcional):</label>
+                    <input type="email" value={authEmail} onChange={e => setAuthEmail(e.target.value)} style={inputStyle} placeholder="Seu e-mail" />
+                  </div>
+                )}
+
+                <div style={{ marginBottom: '20px' }}>
+                  <label style={labelStyle}>Senha:</label>
+                  <input type="password" value={authPassword} onChange={e => setAuthPassword(e.target.value)} style={inputStyle} required placeholder="Sua senha" />
+                </div>
+
+                <button type="submit" style={btnPrincipal}>
+                  {modoAuth === 'cadastro' ? 'Cadastrar' : 'Entrar'}
+                </button>
+              </form>
+            )}
+
+            {authErro && <p style={{ color: '#000000', fontSize: '0.9rem', marginTop: '15px', textAlign: 'center' }}>{authErro}</p>}
+            {authSucesso && <p style={{ color: '#000000', fontSize: '0.9rem', marginTop: '15px', textAlign: 'center', fontWeight: 'bold' }}>{authSucesso}</p>}
+
+            {!usuario && modoAuth !== 'senha' && (
+              <div style={{ textAlign: 'center', marginTop: '20px', fontSize: '0.85rem', color: '#000000', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+
+                {modoAuth === 'login' ? (
+                  <>
+                    <span onClick={() => { setModoAuth('cadastro'); setAuthErro(''); setAuthSucesso(''); }} style={linkStyle}>
+                      Ainda não tem conta? Cadastre-se
+                    </span>
+                    <span onClick={() => { setModoAuth('senha'); setAuthErro(''); setAuthSucesso(''); }} style={linkStyle}>
+                      Deseja alterar a senha?
+                    </span>
+                  </>
+                ) : (
+                  <span onClick={() => { setModoAuth('login'); setAuthErro(''); setAuthSucesso(''); }} style={linkStyle}>
+                    Já tem uma conta? Faça Login
+                  </span>
+                )}
+
+                <div style={{ display: 'flex', alignItems: 'center', margin: '10px 0' }}>
+                  <div style={{ flex: 1, borderBottom: '1px solid #a8dcd9' }}></div>
+                  <span style={{ padding: '0 10px', color: '#000000', fontSize: '0.75rem' }}>ou</span>
+                  <div style={{ flex: 1, borderBottom: '1px solid #a8dcd9' }}></div>
+                </div>
+
+                <button onClick={handleGoogleLogin} style={btnGoogle}>
+                  Entrar com o Google
+                </button>
+
+              </div>
+            )}
+
+          </div>
+        ) : (
+          <>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', marginBottom: '25px', flexWrap: 'wrap' }}>
+              <button
+                onClick={() => setAbaAtiva('dashboard')}
+                style={abaAtiva === 'dashboard' ? btnAbaAtiva : btnAbaInativa}
+              >
+                Dashboard
+              </button>
+              <button
+                onClick={() => setAbaAtiva('recomendacao')}
+                style={abaAtiva === 'recomendacao' ? btnAbaAtiva : btnAbaInativa}
+              >
+                Recomendador IA
+              </button>
+              <button
+                onClick={() => setAbaAtiva('cadastrar')}
+                style={abaAtiva === 'cadastrar' ? btnAbaAtiva : btnAbaInativa}
+              >
+                Nova Peça
+              </button>
+              <button
+                onClick={() => setAbaAtiva('guardaRoupa')}
+                style={abaAtiva === 'guardaRoupa' ? btnAbaAtiva : btnAbaInativa}
+              >
+                Meu Guarda-Roupa
+              </button>
+              <button
+                onClick={() => setAbaAtiva('favoritos')}
+                style={abaAtiva === 'favoritos' ? btnAbaAtiva : btnAbaInativa}
+              >
+                Looks Favoritos
+              </button>
+              <button
+                onClick={() => setAbaAtiva('diario')}
+                style={abaAtiva === 'diario' ? btnAbaAtiva : btnAbaInativa}
+              >
+                Agenda de Looks
+              </button>
+            </div>
+
+            {abaAtiva === 'dashboard' && (
+              <AbaDashboard pecas={pecas} registros={looks} favoritos={favoritos} />
+            )}
+
+            {abaAtiva === 'recomendacao' && (
+              <div style={{ background: '#ffffff', border: '1px solid #a8dcd9', padding: '30px', borderRadius: '20px', textAlign: 'center', marginBottom: '30px', boxShadow: '0 10px 25px rgba(0,0,0,0.03)' }}>
+                <h2 style={{ color: '#000000', marginTop: 0, fontSize: '1.5rem' }}>Recomendador de Look Por IA</h2>
+                <p style={{ color: '#555555', fontSize: '0.95rem' }}>Selecione a ocasião para que a inteligência monte o look perfeito:</p>
+                <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', marginTop: '20px' }}>
+                  <button onClick={() => handleGerarLook('Geral')} style={btnSecundario}>Look Geral</button>
+                  <button onClick={() => handleGerarLook('Verão')} style={btnSecundario}>Look Verão</button>
+                  <button onClick={() => handleGerarLook('Inverno')} style={btnSecundario}>Look Inverno</button>
+                </div>
+
+                {carregandoLook && <p style={{ color: '#000000', fontWeight: 'bold', marginTop: '20px' }}>Gerando combinação...</p>}
+
+                {lookGerado && (
+                  <div style={{ marginTop: '25px', background: '#f8fdfd', border: '1px solid #a8dcd9', padding: '20px', borderRadius: '14px', textAlign: 'left' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+                      <h3 style={{ color: '#000000', margin: 0, fontSize: '1.1rem' }}>{lookGerado.nome_look}</h3>
+                      <button onClick={() => handleFavoritarLook(lookGerado)} style={btnFavoritar}>Favoritar Look</button>
+                    </div>
+                    <p style={{ margin: '0 0 15px 0', color: '#444444', fontSize: '0.9rem' }}>{lookGerado.descricao}</p>
+
+                    {lookGerado.pecas && lookGerado.pecas.length > 0 && (
+                      <div style={{ display: 'flex', gap: '15px', marginTop: '15px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                        {lookGerado.pecas.map((item, index) => (
+                          item.imagem && (
+                            <div key={index} style={{ textAlign: 'center', background: '#ffffff', padding: '10px', borderRadius: '10px', boxShadow: '0 4px 10px rgba(0,0,0,0.03)' }}>
+                              <img
+                                src={item.imagem.startsWith('http') ? item.imagem : `http://127.0.0.1:8000${item.imagem}`}
+                                alt={item.categoria}
+                                style={{ width: '120px', height: '120px', objectFit: 'cover', borderRadius: '8px' }}
+                              />
+                              <p style={{ fontSize: '0.8rem', margin: '8px 0 0 0', textTransform: 'capitalize', color: '#000000', fontWeight: '600' }}>
+                                {item.categoria} ({item.cor})
+                              </p>
+                            </div>
+                          )
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {abaAtiva === 'cadastrar' && (
+              <div style={{ background: '#ffffff', border: '1px solid #a8dcd9', padding: '30px', borderRadius: '20px', marginBottom: '30px', boxShadow: '0 10px 25px rgba(0,0,0,0.03)' }}>
+                <h3 style={{ color: '#000000', marginTop: 0, marginBottom: '20px', fontSize: '1.3rem' }}>Adicionar Peça ao Closet</h3>
+
+                <form ref={formRef} onSubmit={handleCadastrarPeca}>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginBottom: '15px' }}>
+                    <div>
+                      <label style={labelStyle}>Categoria:</label>
+                      <input type="text" value={categoria} onChange={e => { setCategoria(e.target.value); limparMensagemStatus(); }} style={inputStyle} placeholder="ex: Camiseta " />
+                    </div>
+                    <div>
+                      <label style={labelStyle}>Cor:</label>
+                      <input type="text" value={cor} onChange={e => { setCor(e.target.value); limparMensagemStatus(); }} style={inputStyle} placeholder="ex: Azul " />
+                    </div>
+                    <div>
+                      <label style={labelStyle}>Estilo:</label>
+                      <input type="text" value={estilo} onChange={e => { setEstilo(e.target.value); limparMensagemStatus(); }} style={inputStyle} placeholder="ex: Casual " />
+                    </div>
+                    <div>
+                      <label style={labelStyle}>Clima Ideal:</label>
+                      <input type="text" value={clima} onChange={e => { setClima(e.target.value); limparMensagemStatus(); }} style={inputStyle} placeholder="ex: Verão " />
+                    </div>
+                  </div>
+
+                  <div style={{ marginBottom: '20px' }}>
+                    <label style={labelStyle}>Fotografia da Peça:</label>
+                    <input
+                      type="file"
+                      onChange={e => { setImagem(e.target.files[0]); limparMensagemStatus(); }}
+                      accept="image/*"
+                      style={{ width: '100%' }}
+                    />
+                  </div>
+
+                  <button type="submit" style={btnPrincipal}>
+                    Salvar Peça no Closet
+                  </button>
+                </form>
+
+                {statusCadastro && (
+                  <p style={{ color: '#000000', marginTop: '15px', fontWeight: 'bold' }}>
+                    {statusCadastro}
+                  </p>
+                )}
+              </div>
+            )}
+
+            {abaAtiva === 'guardaRoupa' && (
+              <>
+                <h2 style={{ color: '#000000', fontSize: '1.4rem', marginBottom: '20px' }}>
+                  Meu Guarda-Roupa ({pecas.length} peças)
+                </h2>
+
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '20px' }}>
+                  {pecas.map(peca => (
+                    <div key={peca.id} style={{ border: '1px solid #a8dcd9', borderRadius: '16px', overflow: 'hidden', background: '#ffffff', boxShadow: '0 4px 15px rgba(0,0,0,0.03)' }}>
+                      {peca.imagem && (
+                        <img src={peca.imagem} alt={peca.categoria} style={{ width: '100%', height: '180px', objectFit: 'cover' }} />
+                      )}
+                      <div style={{ padding: '15px' }}>
+                        <h3 style={{ margin: '0 0 10px 0', textTransform: 'capitalize', color: '#000000', fontSize: '1.1rem' }}>
+                          {peca.categoria} - {peca.cor}
+                        </h3>
+                        <p style={{ margin: '5px 0', fontSize: '0.85rem', color: '#555555' }}><strong>Estilo:</strong> {peca.estilo}</p>
+                        <p style={{ margin: '5px 0', fontSize: '0.85rem', color: '#555555' }}><strong>Clima:</strong> {peca.clima}</p>
+
+                        <div style={{ display: 'flex', gap: '8px', marginTop: '15px' }}>
+                          <button onClick={() => abrirEdicao(peca)} style={btnEditar}>Editar</button>
+                          <button onClick={() => handleDeletarPeca(peca.id)} style={btnExcluir}>Excluir</button>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+
+            {abaAtiva === 'favoritos' && (
+              <div style={{ background: '#ffffff', border: '1px solid #a8dcd9', padding: '30px', borderRadius: '20px', boxShadow: '0 10px 25px rgba(0,0,0,0.03)' }}>
+                <h2 style={{ color: '#000000', marginTop: 0 }}> Favoritos</h2>
+                <p style={{ color: '#555555' }}>Combinações salvas:</p>
+
+                {favoritos.length === 0 ? (
+                  <p style={{ color: '#777777', fontStyle: 'italic' }}>Nenhum look favoritado ainda.</p>
+                ) : (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '20px' }}>
+                    {favoritos.map((fav, idx) => (
+                      <div key={idx} style={{ border: '1px solid #a8dcd9', padding: '15px', borderRadius: '12px', background: '#f8fdfd' }}>
+                        <h3 style={{ margin: '0 0 10px 0', color: '#000000' }}>{fav.nome_look}</h3>
+                        <p style={{ margin: '0 0 10px 0', color: '#555555', fontSize: '0.9rem' }}>{fav.descricao}</p>
+                        <div style={{ display: 'flex', gap: '10px' }}>
+                          {fav.pecas?.map((p, i) => (
+                            <img
+                              key={i}
+                              src={p.imagem.startsWith('http') ? p.imagem : `http://127.0.0.1:8000${p.imagem}`}
+                              alt={p.categoria}
+                              style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '8px', border: '1px solid #a8dcd9' }}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {abaAtiva === 'diario' && (
+              <AbaDiario pecas={pecas} />
+            )}
+
+            {/* MODAL DE EDIÇÃO */}
+            {pecaEmEdicao && (
+              <div style={modalOverlay}>
+                <div style={modalBox}>
+                  <h3 style={{ marginTop: 0, color: '#000000' }}>Editar Peça</h3>
+                  <form onSubmit={handleSalvarEdicao}>
+                    <div style={{ marginBottom: '10px' }}>
+                      <label style={labelStyle}>Categoria:</label>
+                      <input value={editCategoria} onChange={e => setEditCategoria(e.target.value)} style={inputStyle} />
+                    </div>
+                    <div style={{ marginBottom: '10px' }}>
+                      <label style={labelStyle}>Cor:</label>
+                      <input value={editCor} onChange={e => setEditCor(e.target.value)} style={inputStyle} />
+                    </div>
+                    <div style={{ marginBottom: '10px' }}>
+                      <label style={labelStyle}>Estilo:</label>
+                      <input value={editEstilo} onChange={e => setEditEstilo(e.target.value)} style={inputStyle} />
+                    </div>
+                    <div style={{ marginBottom: '10px' }}>
+                      <label style={labelStyle}>Clima:</label>
+                      <input value={editClima} onChange={e => setEditClima(e.target.value)} style={inputStyle} />
+                    </div>
+                    <div style={{ marginBottom: '15px' }}>
+                      <label style={labelStyle}>Alterar Foto (Opcional):</label>
+                      <input type="file" onChange={e => setEditImagem(e.target.files[0])} accept="image/*" />
+                    </div>
+                    <div style={{ display: 'flex', gap: '10px' }}>
+                      <button type="submit" style={btnPrincipal}>Salvar</button>
+                      <button type="button" onClick={() => setPecaEmEdicao(null)} style={btnCancelar}>Cancelar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            )}
+          </>
+        )}
+
+      </div>
+
+      {/* MODAL GOOGLE - COM FOTOS E AÇÃO DE USAR OUTRA CONTA */}
+      {mostrarModalGoogle && (
+        <div style={modalOverlay}>
+          <div style={{ ...modalBox, maxWidth: '420px', padding: '32px 28px', textAlign: 'left', borderRadius: '24px' }}>
+
+            {/* Cabeçalho Google */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '20px' }}>
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+              <span style={{ fontSize: '0.9rem', color: '#3c4043', fontWeight: '500' }}>Fazer Login com o Google</span>
+            </div>
+
+            {/* Logo da aplicação */}
+            <div style={{ marginBottom: '16px' }}>
+              {LOGO_MARCA_URL && (
+                <img src={LOGO_MARCA_URL} alt="Logo" style={{ height: '40px', objectFit: 'contain' }} />
+              )}
+            </div>
+
+            {!modoOutraContaGoogle ? (
+              <>
+                <h2 style={{ margin: '0 0 6px 0', fontSize: '1.5rem', color: '#1f1f1f', fontWeight: '400' }}>
+                  Escolha uma conta
+                </h2>
+                <p style={{ margin: '0 0 24px 0', fontSize: '0.95rem', color: '#444746' }}>
+                  Prosseguir para <span style={{ color: '#0b57d0', fontWeight: '600' }}>Meu Closet Digital</span>
+                </p>
+
+                {/* Lista de Contas com Avatares Gerados */}
+                <div style={{ borderTop: '1px solid #e0e0e0' }}>
+                  {contasGoogleExemplo.map((conta, index) => (
+                    <div
+                      key={index}
+                      onClick={() => selecionarContaGoogle(conta)}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '14px',
+                        padding: '14px 0',
+                        borderBottom: '1px solid #e0e0e0',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      <img
+                        src={conta.foto}
+                        alt={conta.nome}
+                        style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'cover' }}
+                      />
+                      <div style={{ display: 'flex', flexDirection: 'column' }}>
+                        <strong style={{ fontSize: '0.95rem', color: '#1f1f1f', fontWeight: '500' }}>{conta.nome}</strong>
+                        <span style={{ fontSize: '0.85rem', color: '#5f6368' }}>{conta.email}</span>
+                      </div>
+                    </div>
+                  ))}
+
+                  <div
+                    onClick={() => setModoOutraContaGoogle(true)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '14px',
+                      padding: '14px 0',
+                      borderBottom: '1px solid #e0e0e0',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    <div style={{
+                      width: '40px',
+                      height: '40px',
+                      borderRadius: '50%',
+                      border: '1px solid #dadce0',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: '#5f6368',
+                      background: '#f8f9fa'
+                    }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                      </svg>
+                    </div>
+                    <span style={{ fontSize: '0.95rem', color: '#1f1f1f', fontWeight: '500' }}>Usar outra conta</span>
+                  </div>
+                </div>
+              </>
+            ) : (
+              /* Formulário ao Clicar em Usar Outra Conta */
+              <form onSubmit={handleEntrarComOutraContaGoogle}>
+                <h2 style={{ margin: '0 0 6px 0', fontSize: '1.3rem', color: '#1f1f1f' }}>
+                  Fazer login com Google
+                </h2>
+                <p style={{ margin: '0 0 20px 0', fontSize: '0.85rem', color: '#5f6368' }}>
+                  Digite os dados de qualquer outra conta para prosseguir:
+                </p>
+
+                <div style={{ marginBottom: '12px' }}>
+                  <label style={labelStyle}>Nome da Conta:</label>
+                  <input
+                    type="text"
+                    value={novoNomeGoogle}
+                    onChange={e => setNovoNomeGoogle(e.target.value)}
+                    style={inputStyle}
+                    placeholder="ex: João Silva"
+                    required
+                  />
+                </div>
+
+                <div style={{ marginBottom: '20px' }}>
+                  <label style={labelStyle}>E-mail:</label>
+                  <input
+                    type="email"
+                    value={novoEmailGoogle}
+                    onChange={e => setNovoEmailGoogle(e.target.value)}
+                    style={inputStyle}
+                    placeholder="ex: joao@gmail.com"
+                  />
+                </div>
+
+                <div style={{ display: 'flex', gap: '10px' }}>
+                  <button type="submit" style={btnPrincipal}>Avançar</button>
+                  <button type="button" onClick={() => setModoOutraContaGoogle(false)} style={btnAbaInativa}>Voltar</button>
+                </div>
+              </form>
+            )}
+
+            {/* Termos e Rodapé */}
+            <p style={{ marginTop: '24px', fontSize: '0.8rem', color: '#5f6368', lineHeight: '1.4' }}>
+              Consulte a <span style={{ color: '#0b57d0', cursor: 'pointer' }}>Política de Privacidade</span> e os <span style={{ color: '#0b57d0', cursor: 'pointer' }}>Termos de Serviço</span> do app Meu Closet Digital antes de usá-lo.
+            </p>
+
+            <button
+              type="button"
+              onClick={() => { setMostrarModalGoogle(false); setModoOutraContaGoogle(false); }}
+              style={{ ...btnCancelar, marginTop: '10px' }}
+            >
+              Cancelar
+            </button>
+
+          </div>
+        </div>
+      )}
+
+    </div>
+  );
+}
+
+// ESTILOS DE COMPONENTES
+const labelStyle = { display: 'block', fontSize: '0.85rem', fontWeight: '600', color: '#333333', marginBottom: '6px' };
+const inputStyle = { width: '100%', padding: '12px', borderRadius: '10px', border: '1px solid #a8dcd9', boxSizing: 'border-box', background: '#fcfdfe', color: '#000000', outline: 'none', fontSize: '0.9rem' };
+
+const btnAbaAtiva = { background: '#a8dcd9', color: '#000000', border: 'none', padding: '10px 18px', borderRadius: '25px', fontWeight: '700', cursor: 'pointer', boxShadow: '0 4px 12px rgba(168, 220, 217, 0.6)' };
+const btnAbaInativa = { background: '#ffffff', color: '#555555', border: '1px solid #a8dcd9', padding: '10px 18px', borderRadius: '25px', fontWeight: '600', cursor: 'pointer' };
+
+const btnSecundario = { background: '#a8dcd9', color: '#000000', border: 'none', padding: '10px 20px', borderRadius: '10px', cursor: 'pointer', fontWeight: 'bold', boxShadow: '0 4px 10px rgba(168, 220, 217, 0.4)' };
+const btnPrincipal = { width: '100%', background: '#a8dcd9', color: '#000000', border: 'none', padding: '12px', borderRadius: '10px', cursor: 'pointer', fontWeight: 'bold', fontSize: '1rem', boxShadow: '0 4px 12px rgba(168, 220, 217, 0.5)' };
+const btnEditar = { flex: 1, background: '#a8dcd9', color: '#000000', border: 'none', padding: '8px', borderRadius: '8px', cursor: 'pointer', fontWeight: 'bold' };
+const btnExcluir = { flex: 1, background: '#000000', color: '#ffffff', border: 'none', padding: '8px', borderRadius: '8px', cursor: 'pointer', fontWeight: 'bold' };
+const btnCancelar = { width: '100%', background: '#000000', color: '#ffffff', border: 'none', padding: '12px', borderRadius: '10px', cursor: 'pointer', fontWeight: 'bold' };
+const btnGoogle = { width: '100%', background: '#ffffff', color: '#000000', border: '1px solid #a8dcd9', padding: '10px', borderRadius: '10px', cursor: 'pointer', fontWeight: '600', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center' };
+
+const btnFavoritar = {
+  background: '#a8dcd9',
+  color: '#000000',
+  border: 'none',
+  padding: '6px 14px',
+  borderRadius: '20px',
+  cursor: 'pointer',
+  fontWeight: 'bold',
+  fontSize: '0.8rem',
+  whiteSpace: 'nowrap',
+  boxShadow: '0 2px 8px rgba(168, 220, 217, 0.5)'
+};
+
+const modalOverlay = { position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 };
+const modalBox = { background: '#ffffff', padding: '30px', borderRadius: '16px', maxWidth: '400px', width: '90%', border: '1px solid #a8dcd9', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' };
+const linkStyle = { color: '#000000', fontWeight: 'bold', cursor: 'pointer', textDecoration: 'underline' };
+
+export default App;
+</file>
+
+<file path="frontend-consultoria/src/App.test.js">
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+</file>
+
+<file path="frontend-consultoria/src/index.css">
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+</file>
+
+<file path="frontend-consultoria/src/index.js">
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+</file>
+
+<file path="frontend-consultoria/src/logo.svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3"><g fill="#61DAFB"><path d="M666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9V78c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6V78.5c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zM421.2 430c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24 4.7 8 9.5 15.8 14.4 23.4zM420.7 163c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6 0-15.7 22.9-35.6 58.3-50.6 8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zM310 490c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6zM320.8 78.4z"/><circle cx="420.9" cy="296.5" r="45.7"/><path d="M520.5 78.1z"/></g></svg>
+</file>
+
+<file path="frontend-consultoria/src/reportWebVitals.js">
+const reportWebVitals = onPerfEntry => {
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+      getCLS(onPerfEntry);
+      getFID(onPerfEntry);
+      getFCP(onPerfEntry);
+      getLCP(onPerfEntry);
+      getTTFB(onPerfEntry);
+    });
+  }
+};
+
+export default reportWebVitals;
+</file>
+
+<file path="frontend-consultoria/src/setupTests.js">
+// jest-dom adds custom jest matchers for asserting on DOM nodes.
+// allows you to do things like:
+// expect(element).toHaveTextContent(/react/i)
+// learn more: https://github.com/testing-library/jest-dom
+import '@testing-library/jest-dom';
+</file>
+
+<file path="frontend-consultoria/.gitignore">
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+</file>
+
+<file path="frontend-consultoria/package.json">
+{
+  "name": "frontend-consultoria",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.19.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+</file>
+
+<file path="frontend-consultoria/README.md">
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</file>
+
+<file path="consultoria_moda/__init__.py">
+
+</file>
+
+<file path="consultoria_moda/.gitignore">
+
+</file>
+
+<file path="consultoria_moda/asgi.py">
+"""
+ASGI config for consultoria_moda project.
+
+It exposes the ASGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/6.0/howto/deployment/asgi/
+"""
+
+import os
+
+from django.core.asgi import get_asgi_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'consultoria_moda.settings')
+
+application = get_asgi_application()
+</file>
+
+<file path="consultoria_moda/wsgi.py">
+"""
+WSGI config for consultoria_moda project.
+
+It exposes the WSGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/6.0/howto/deployment/wsgi/
+"""
+
+import os
+
+from django.core.wsgi import get_wsgi_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'consultoria_moda.settings')
+
+application = get_wsgi_application()
+</file>
+
+<file path="core/migrations/__init__.py">
+
+</file>
+
+<file path="core/migrations/0001_initial.py">
+# Generated by Django 6.0.6 on 2026-08-26 00:24
+
+import django.db.models.deletion
+from django.db import migrations, models
+
+
+class Migration(migrations.Migration):
+
+    initial = True
+
+    dependencies = [
+    ]
+
+    operations = [
+        migrations.CreateModel(
+            name='Usuario',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('nome', models.CharField(max_length=100)),
+                ('email', models.EmailField(max_length=254, unique=True)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Peca',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('categoria', models.CharField(max_length=50)),
+                ('cor', models.CharField(max_length=50)),
+                ('estilo', models.CharField(blank=True, max_length=50, null=True)),
+                ('clima', models.CharField(blank=True, max_length=50, null=True)),
+                ('imagem_path', models.ImageField(upload_to='roupas/')),
+                ('usuario', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='core.usuario')),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Look',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('nome_look', models.CharField(max_length=100)),
+                ('descricao', models.TextField()),
+                ('clima_sugerido', models.CharField(max_length=50)),
+                ('criado_em', models.DateTimeField(auto_now_add=True)),
+                ('pecas', models.ManyToManyField(to='core.peca')),
+                ('usuario', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='core.usuario')),
+            ],
+        ),
+    ]
+</file>
+
+<file path="core/migrations/0002_remove_look_clima_sugerido_remove_look_criado_em_and_more.py">
+# Generated by Django 6.0.6 on 2026-08-28 01:23
+
+import django.db.models.deletion
+from django.db import migrations, models
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('core', '0001_initial'),
+    ]
+
+    operations = [
+        migrations.RemoveField(
+            model_name='look',
+            name='clima_sugerido',
+        ),
+        migrations.RemoveField(
+            model_name='look',
+            name='criado_em',
+        ),
+        migrations.RemoveField(
+            model_name='peca',
+            name='imagem_path',
+        ),
+        migrations.AddField(
+            model_name='peca',
+            name='imagem',
+            field=models.ImageField(blank=True, null=True, upload_to='pecas/'),
+        ),
+        migrations.AlterField(
+            model_name='look',
+            name='descricao',
+            field=models.TextField(blank=True, null=True),
+        ),
+        migrations.AlterField(
+            model_name='look',
+            name='nome_look',
+            field=models.CharField(blank=True, max_length=100, null=True),
+        ),
+        migrations.AlterField(
+            model_name='look',
+            name='usuario',
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='core.usuario'),
+        ),
+        migrations.AlterField(
+            model_name='peca',
+            name='categoria',
+            field=models.CharField(blank=True, max_length=100, null=True),
+        ),
+        migrations.AlterField(
+            model_name='peca',
+            name='cor',
+            field=models.CharField(blank=True, max_length=50, null=True),
+        ),
+        migrations.AlterField(
+            model_name='peca',
+            name='usuario',
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='core.usuario'),
+        ),
+        migrations.AlterField(
+            model_name='usuario',
+            name='email',
+            field=models.EmailField(blank=True, max_length=254, null=True, unique=True),
+        ),
+        migrations.AlterField(
+            model_name='usuario',
+            name='nome',
+            field=models.CharField(blank=True, max_length=100, null=True),
+        ),
+    ]
+</file>
+
+<file path="core/migrations/0003_look_usuario_django_peca_usuario_django.py">
+# Generated by Django 6.0.6 on 2026-08-30 21:15
+
+import django.db.models.deletion
+from django.conf import settings
+from django.db import migrations, models
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('core', '0002_remove_look_clima_sugerido_remove_look_criado_em_and_more'),
+        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+    ]
+
+    operations = [
+        migrations.AddField(
+            model_name='look',
+            name='usuario_django',
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL),
+        ),
+        migrations.AddField(
+            model_name='peca',
+            name='usuario_django',
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL),
+        ),
+    ]
+</file>
+
+<file path="core/migrations/0004_registrodiario.py">
+# Generated by Django 6.0.6 on 2026-09-01 18:48
+
+import django.db.models.deletion
+from django.conf import settings
+from django.db import migrations, models
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('core', '0003_look_usuario_django_peca_usuario_django'),
+        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+    ]
+
+    operations = [
+        migrations.CreateModel(
+            name='RegistroDiario',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('data', models.DateField()),
+                ('observacao', models.CharField(blank=True, max_length=255, null=True)),
+                ('pecas', models.ManyToManyField(blank=True, to='core.peca')),
+                ('usuario', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='core.usuario')),
+                ('usuario_django', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+            ],
+        ),
+    ]
+</file>
+
+<file path="core/migrations/0005_registrodiario_avaliacao_registrodiario_comentario.py">
+# Generated by Django 6.0.6 on 2026-09-01 19:16
+
+from django.db import migrations, models
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('core', '0004_registrodiario'),
+    ]
+
+    operations = [
+        migrations.AddField(
+            model_name='registrodiario',
+            name='avaliacao',
+            field=models.IntegerField(choices=[(1, 1), (2, 2), (3, 3), (4, 4), (5, 5)], default=5),
+        ),
+        migrations.AddField(
+            model_name='registrodiario',
+            name='comentario',
+            field=models.TextField(blank=True, null=True),
+        ),
+    ]
+</file>
+
+<file path="core/__init__.py">
+
+</file>
+
+<file path="core/admin.py">
+from django.contrib import admin
+from .models import Usuario, Peca, Look, RegistroDiario
+
+@admin.register(Peca)
+class PecaAdmin(admin.ModelAdmin):
+    exclude = ('usuario', 'usuario_django')
+
+    def save_model(self, request, obj, form, change):
+        obj.usuario_django = request.user
+        try:
+            perfil_usuario, created = Usuario.objects.get_or_create(
+                email=request.user.email if request.user.email else f"{request.user.username}@exemplo.com",
+                defaults={'nome': request.user.username}
+            )
+            obj.usuario = perfil_usuario
+        except Exception:
+            pass
+        super().save_model(request, obj, form, change)
+
+
+@admin.register(Look)
+class LookAdmin(admin.ModelAdmin):
+    exclude = ('usuario', 'usuario_django')
+
+    def save_model(self, request, obj, form, change):
+        obj.usuario_django = request.user
+        try:
+            perfil_usuario, created = Usuario.objects.get_or_create(
+                email=request.user.email if request.user.email else f"{request.user.username}@exemplo.com",
+                defaults={'nome': request.user.username}
+            )
+            obj.usuario = perfil_usuario
+        except Exception:
+            pass
+        super().save_model(request, obj, form, change)
+
+
+@admin.register(RegistroDiario)
+class RegistroDiarioAdmin(admin.ModelAdmin):
+    exclude = ('usuario', 'usuario_django')
+
+    def save_model(self, request, obj, form, change):
+        obj.usuario_django = request.user
+        try:
+            perfil_usuario, created = Usuario.objects.get_or_create(
+                email=request.user.email if request.user.email else f"{request.user.username}@exemplo.com",
+                defaults={'nome': request.user.username}
+            )
+            obj.usuario = perfil_usuario
+        except Exception:
+            pass
+        super().save_model(request, obj, form, change)
+
+
+admin.site.register(Usuario)
+</file>
+
+<file path="core/apps.py">
+from django.apps import AppConfig
+
+
+class CoreConfig(AppConfig):
+    name = 'core'
+</file>
+
+<file path="core/tests.py">
+from django.test import TestCase
+
+# Create your tests here.
+</file>
+
+<file path="manage.py">
+#!/usr/bin/env python
+"""Django's command-line utility for administrative tasks."""
+import os
+import sys
+
+
+def main():
+    """Run administrative tasks."""
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'consultoria_moda.settings')
+    try:
+        from django.core.management import execute_from_command_line
+    except ImportError as exc:
+        raise ImportError(
+            "Couldn't import Django. Are you sure it's installed and "
+            "available on your PYTHONPATH environment variable? Did you "
+            "forget to activate a virtual environment?"
+        ) from exc
+    execute_from_command_line(sys.argv)
+
+
+if __name__ == '__main__':
+    main()
+</file>
+
+<file path="core/serializers.py">
+from rest_framework import serializers
+from django.contrib.auth.models import User
+from .models import Peca, Look, RegistroDiario
+
+class UsuarioSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = '__all__'
+
+class PecaSerializer(serializers.ModelSerializer):
+    imagem = serializers.ImageField(required=False, allow_null=True)
+    imagem_path = serializers.ImageField(required=False, allow_null=True)
+
+    class Meta:
+        model = Peca
+        fields = '__all__'
+        extra_kwargs = {
+            'usuario': {'required': False, 'allow_null': True}
+        }
+
+class LookSerializer(serializers.ModelSerializer):
+    pecas = PecaSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Look
+        fields = '__all__'
+
+class RegistroDiarioSerializer(serializers.ModelSerializer):
+    pecas_detalhes = PecaSerializer(source='pecas', many=True, read_only=True)
+
+    class Meta:
+        model = RegistroDiario
+        fields = '__all__'
+</file>
+
+<file path="core/services.py">
+import random
+
+COMBINACOES_CORES = {
+    'preto': ['branco', 'cinza', 'jeans', 'vermelho', 'rosa', 'azul', 'amarelo', 'verde', 'bege'],
+    'branco': ['preto', 'cinza', 'jeans', 'rosa', 'azul', 'verde', 'vermelho', 'bege'],
+    'cinza': ['preto', 'branco', 'rosa', 'azul', 'vermelho', 'jeans'],
+    'jeans': ['preto', 'branco', 'cinza', 'rosa', 'vermelho', 'amarelo', 'verde'],
+    'azul': ['preto', 'branco', 'cinza', 'jeans', 'bege'],
+    'rosa': ['preto', 'branco', 'cinza', 'jeans'],
+    'bege': ['preto', 'branco', 'azul', 'verde', 'vermelho'],
+    'vermelho': ['preto', 'branco', 'cinza', 'jeans'],
+    'verde': ['preto', 'branco', 'jeans', 'bege'],
+}
+
+COMPATIBILIDADE_ESTILOS = {
+    'casual': ['casual', 'esporte', 'festa'],
+    'formal': ['formal', 'trabalho'],
+    'trabalho': ['trabalho', 'formal', 'casual'],
+    'festa': ['festa', 'casual'],
+    'esporte': ['esporte', 'casual']
+}
+
+
+def sao_estilos_compativeis(estilo1, estilo2):
+    """Verifica se dois estilos combinam entre si."""
+    e1 = estilo1.lower().strip() if estilo1 else 'casual'
+    e2 = estilo2.lower().strip() if estilo2 else 'casual'
+
+    if e1 == e2:
+        return True
+
+    comp1 = COMPATIBILIDADE_ESTILOS.get(e1, ['casual'])
+    return e2 in comp1
+
+
+def sao_cores_harmonicas(cor1, cor2):
+    """Verifica se duas cores combinam segundo a tabela de harmonia."""
+    c1 = cor1.lower().strip()
+    c2 = cor2.lower().strip()
+
+    if c1 == c2:
+        return True
+
+    combinacoes = COMBINACOES_CORES.get(c1, [])
+    return c2 in combinacoes
+
+
+def gerar_recomendacao_look(pecas, clima='Geral', ocasiao='Geral'):
+    """
+    Algoritmo de recomendação inteligente que considera:
+    - Categoria da peça (superior x inferior)
+    - Clima/Temperatura
+    - Harmonia de Cores
+    - Compatibilidade de Estilo
+    """
+    categorias_superiores = ['camiseta', 'blusa', 'camisa', 'casaco', 'jaqueta', 'top', 'moletom']
+    categorias_inferiores = ['calça', 'short', 'bermuda', 'saia', 'calca']
+
+    pecas_superiores = [p for p in pecas if p.categoria.lower().strip() in categorias_superiores]
+    pecas_inferiores = [p for p in pecas if p.categoria.lower().strip() in categorias_inferiores]
+
+    if not pecas_superiores or not pecas_inferiores:
+        return None, "É necessário ter pelo menos uma peça superior e uma inferior cadastradas."
+
+    if clima.lower() == 'verão':
+        pecas_superiores = [p for p in pecas_superiores if
+                            p.categoria.lower().strip() not in ['casaco', 'jaqueta', 'moletom']]
+        pecas_inferiores = [p for p in pecas_inferiores if
+                            p.categoria.lower().strip() in ['short', 'bermuda', 'saia']] or pecas_inferiores
+    elif clima.lower() == 'inverno':
+        pecas_inferiores = [p for p in pecas_inferiores if
+                            p.categoria.lower().strip() not in ['short', 'bermuda']] or pecas_inferiores
+
+    combinacoes_validas = []
+
+    for sup in pecas_superiores:
+        for inf in pecas_inferiores:
+            cor_combina = sao_cores_harmonicas(sup.cor, inf.cor)
+            estilo_combina = sao_estilos_compativeis(getattr(sup, 'estilo', ''), getattr(inf, 'estilo', ''))
+
+            if cor_combina and estilo_combina:
+                combinacoes_validas.append((sup, inf, "perfeita"))
+            elif cor_combina:
+                combinacoes_validas.append((sup, inf, "boa_cor"))
+            elif estilo_combina:
+                combinacoes_validas.append((sup, inf, "bom_estilo"))
+
+    if combinacoes_validas:
+
+        perfeitas = [pair for pair in combinacoes_validas if pair[2] == "perfeita"]
+        if perfeitas:
+            sup, inf, tipo = random.choice(perfeitas)
+            descricao = (f"Look perfeito! A {sup.categoria} ({sup.cor}, estilo {sup.estilo or 'casual'}) "
+                         f"harmoniza em cores e estilo com a {inf.categoria} ({inf.cor}, estilo {inf.estilo or 'casual'}).")
+        else:
+            sup, inf, tipo = random.choice(combinacoes_validas)
+            descricao = (f"Sugestão de look: {sup.categoria} ({sup.cor}) combinada com {inf.categoria} ({inf.cor}).")
+    else:
+        sup = random.choice(pecas_superiores)
+        inf = random.choice(pecas_inferiores)
+        descricao = f"Combinação casual: {sup.categoria} ({sup.cor}) com {inf.categoria} ({inf.cor})."
+
+    nome_look = f"Look {clima.capitalize()} - {sup.categoria.capitalize()} & {inf.categoria.capitalize()}"
+    return (sup, inf), descricao, nome_look
+</file>
+
+<file path="core/models.py">
+from django.db import models
+from django.contrib.auth.models import User
+
+
+class Usuario(models.Model):
+    nome = models.CharField(max_length=100, null=True, blank=True)
+    email = models.EmailField(unique=True, null=True, blank=True)
+
+    def __str__(self):
+        return self.nome or "Usuário sem nome"
+
+
+class Peca(models.Model):
+    categoria = models.CharField(max_length=100, null=True, blank=True)
+    cor = models.CharField(max_length=50, null=True, blank=True)
+    estilo = models.CharField(max_length=50, null=True, blank=True)
+    clima = models.CharField(max_length=50, null=True, blank=True)
+    imagem = models.ImageField(upload_to='pecas/', null=True, blank=True)
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE, null=True, blank=True)
+
+    # Campo para o usuário logado da autenticação nativa
+    usuario_django = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+
+    def __str__(self):
+        return f"{self.categoria} - {self.cor}"
+
+
+class Look(models.Model):
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE, null=True, blank=True)
+    usuario_django = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    nome_look = models.CharField(max_length=100, null=True, blank=True)
+    descricao = models.TextField(null=True, blank=True)
+    pecas = models.ManyToManyField(Peca)
+
+    def __str__(self):
+        return self.nome_look or "Look"
+
+
+class RegistroDiario(models.Model):
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE, null=True, blank=True)
+    usuario_django = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    data = models.DateField()
+    pecas = models.ManyToManyField(Peca, blank=True)
+    observacao = models.CharField(max_length=255, null=True, blank=True)
+    avaliacao = models.IntegerField(default=5, choices=[(i, i) for i in range(1, 6)])
+    comentario = models.TextField(blank=True, null=True)
+
+
+    def __str__(self):
+        return f"Registro {self.data}"
+</file>
+
+<file path="package.json">
+{
+  "dependencies": {
+    "@react-oauth/google": "^0.13.5",
+    "jwt-decode": "^4.0.0",
+    "react-calendar": "^6.0.1",
+    "react-router-dom": "^7.18.2",
+    "recharts": "^3.10.1"
+  }
+}
+</file>
+
+<file path="consultoria_moda/settings.py">
+from pathlib import Path
+import os
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+SECRET_KEY = 'django-insecure-chave-de-teste-tcc-mavi'
+
+DEBUG = True
+
+ALLOWED_HOSTS = ['*']
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'corsheaders',
+    'rest_framework',
+    'core',
+]
+
+MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+ROOT_URLCONF = 'consultoria_moda.urls'
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+WSGI_APPLICATION = 'consultoria_moda.wsgi.application'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+AUTH_PASSWORD_VALIDATORS = [
+    {
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    },
+]
+
+LANGUAGE_CODE = 'pt-br'
+
+TIME_ZONE = 'America/Sao_Paulo'
+
+USE_I18N = True
+
+USE_TZ = True
+
+STATIC_URL = 'static/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
+
+SESSION_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_HTTPONLY = True
+CSRF_COOKIE_HTTPONLY = False
+</file>
+
+<file path="consultoria_moda/urls.py">
+from django.contrib import admin
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+from rest_framework.routers import DefaultRouter
+
+from core.views import (
+    cadastrar_usuario,
+    login_usuario,
+    logout_usuario,
+    usuario_atual,
+    alterar_senha,
+    PecaViewSet,
+    LookViewSet,
+    RegistroDiarioViewSet,
+)
+
+router = DefaultRouter()
+router.register(r'pecas', PecaViewSet, basename='pecas')
+router.register(r'looks', LookViewSet, basename='looks')
+router.register(r'diario', RegistroDiarioViewSet, basename='diario')
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/', include(router.urls)),
+    path('api/auth/cadastrar/', cadastrar_usuario, name='cadastrar'),
+    path('api/auth/login/', login_usuario, name='login'),
+    path('api/auth/logout/', logout_usuario, name='logout'),
+    path('api/auth/me/', usuario_atual, name='usuario_atual'),
+    path('api/auth/alterar-senha/', alterar_senha, name='alterar_senha'),
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+</file>
+
+<file path="core/views.py">
+from rest_framework import viewsets, status
+from rest_framework.response import Response
+from rest_framework.decorators import action, api_view, permission_classes
+from rest_framework.permissions import AllowAny, IsAuthenticated
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login, logout
+from django.db.models import Q
+from .models import Peca, Look, RegistroDiario
+from .serializers import PecaSerializer, LookSerializer, UsuarioSerializer, RegistroDiarioSerializer
+import random
+
+@api_view(['POST'])
+@permission_classes([AllowAny])
+def cadastrar_usuario(request):
+    username = request.data.get('username')
+    password = request.data.get('password')
+    email = request.data.get('email', '')
+
+    if not username or not password:
+        return Response({'erro': 'Usuário e senha são obrigatórios.'}, status=status.HTTP_400_BAD_REQUEST)
+
+    if User.objects.filter(username=username).exists():
+        return Response({'erro': 'Este nome de usuário já está em uso.'}, status=status.HTTP_400_BAD_REQUEST)
+
+    user = User.objects.create_user(username=username, password=password, email=email)
+    login(request, user)
+    return Response({'mensagem': 'Usuário cadastrado com sucesso!', 'user': {'id': user.id, 'username': user.username}})
+
+
+@api_view(['POST'])
+@permission_classes([AllowAny])
+def login_usuario(request):
+    username = request.data.get('username')
+    password = request.data.get('password')
+
+    user = authenticate(request, username=username, password=password)
+    if user is not None:
+        login(request, user)
+        return Response({'mensagem': 'Login realizado!', 'user': {'id': user.id, 'username': user.username}})
+    else:
+        return Response({'erro': 'Usuário ou senha inválidos.'}, status=status.HTTP_401_UNAUTHORIZED)
+
+
+@api_view(['POST'])
+def logout_usuario(request):
+    logout(request)
+    return Response({'mensagem': 'Logout realizado com sucesso!'})
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def usuario_atual(request):
+    if request.user.is_authenticated:
+        return Response({'autenticado': True, 'user': {'id': request.user.id, 'username': request.user.username}})
+    return Response({'autenticado': False})
+
+
+class PecaViewSet(viewsets.ModelViewSet):
+    serializer_class = PecaSerializer
+
+    def get_queryset(self):
+        # Se o usuário estiver autenticado, retorna apenas as peças dele
+        if self.request.user.is_authenticated:
+            return Peca.objects.filter(usuario_django=self.request.user).order_by('-id')
+
+        # Caso não esteja autenticado ou use o usuário fallback (primeiro do banco):
+        user = User.objects.first()
+        if user:
+            return Peca.objects.filter(usuario_django=user).order_by('-id')
+
+        return Peca.objects.none()
+
+    def perform_create(self, serializer):
+        # Associa a nova peça ao usuário logado
+        user = self.request.user if self.request.user.is_authenticated else User.objects.first()
+        serializer.save(usuario_django=user)
+
+
+class LookViewSet(viewsets.ModelViewSet):
+    serializer_class = LookSerializer
+
+    def get_queryset(self):
+        # Corrigido para consultar Look e não Peca
+        if self.request.user.is_authenticated:
+            return Look.objects.filter(usuario_django=self.request.user).order_by('-id')
+        user = User.objects.first()
+        if user:
+            return Look.objects.filter(usuario_django=user).order_by('-id')
+        return Look.objects.none()
+
+    @action(detail=False, methods=['post'])
+    def gerar_look(self, request):
+        clima_filtro = request.data.get('clima', 'Geral')
+
+        if request.user.is_authenticated:
+            pecas_base = Peca.objects.filter(usuario_django=request.user)
+        else:
+            user = User.objects.first()
+            pecas_base = Peca.objects.filter(usuario_django=user) if user else Peca.objects.none()
+
+        if clima_filtro != 'Geral':
+            pecas_usuario = pecas_base.filter(
+                Q(clima__iexact=clima_filtro) |
+                Q(clima__iexact='Geral') |
+                Q(clima__iexact='Gerais') |
+                Q(clima__iexact='Todos') |
+                Q(clima__isnull=True) |
+                Q(clima='')
+            )
+        else:
+            pecas_usuario = pecas_base
+
+        superiores = list(pecas_usuario.filter(
+            Q(categoria__icontains='camis') | Q(categoria__icontains='blusa') | Q(categoria__icontains='top') | Q(categoria__icontains='casaco') | Q(categoria__icontains='jaqueta') | Q(categoria__icontains='suéter') | Q(categoria__icontains='sueter')
+        ))
+
+        inferiores = list(pecas_usuario.filter(
+            Q(categoria__icontains='calça') | Q(categoria__icontains='calca') | Q(categoria__icontains='short') | Q(categoria__icontains='saia')
+        ).exclude(
+            Q(categoria__icontains='sapato') | Q(categoria__icontains='salto') | Q(categoria__icontains='tenis') | Q(categoria__icontains='sandalia') | Q(categoria__icontains='calcado') | Q(categoria__icontains='calçado') | Q(categoria__icontains='bota')
+        ))
+
+        calcados = list(pecas_usuario.filter(
+            Q(categoria__icontains='sapato') | Q(categoria__icontains='salto') | Q(categoria__icontains='tenis') | Q(categoria__icontains='tênis') | Q(categoria__icontains='sandalia') | Q(categoria__icontains='calcado') | Q(categoria__icontains='calçado') | Q(categoria__icontains='bota')
+        ))
+
+        if len(superiores) + len(inferiores) + len(calcados) < 2:
+            return Response(
+                {"erro": f"Não há peças suficientes cadastradas para o clima '{clima_filtro}'. Cadastre peças com esse clima!"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        user = request.user if request.user.is_authenticated else User.objects.first()
+        looks_gerados = []
+        combinacoes_vistas = set()
+
+        tentativas = 0
+        while len(looks_gerados) < 3 and tentativas < 25:
+            tentativas += 1
+            pecas_selecionadas = []
+
+            if superiores:
+                pecas_selecionadas.append(random.choice(superiores))
+            if inferiores:
+                pecas_selecionadas.append(random.choice(inferiores))
+            if calcados:
+                pecas_selecionadas.append(random.choice(calcados))
+
+            if len(pecas_selecionadas) < 2:
+                continue
+
+            ids_combo = tuple(sorted([p.id for p in pecas_selecionadas]))
+            if ids_combo in combinacoes_vistas:
+                continue
+
+            combinacoes_vistas.add(ids_combo)
+
+            nomes_pecas = " & ".join([p.categoria.capitalize() for p in pecas_selecionadas])
+            nome_look = f"Opção {len(looks_gerados) + 1} ({clima_filtro}) - {nomes_pecas}"
+
+            descricoes = [f"{p.categoria} ({p.cor})" for p in pecas_selecionadas]
+            descricao = f"Sugestão de look completo: {', '.join(descricoes)}."
+
+            novo_look = Look.objects.create(
+                usuario_django=user,
+                nome_look=nome_look,
+                descricao=descricao
+            )
+            novo_look.pecas.add(*pecas_selecionadas)
+
+            pecas_do_look = [
+                {
+                    "id": p.id,
+                    "categoria": p.categoria,
+                    "cor": p.cor,
+                    "imagem": request.build_absolute_uri(p.imagem.url) if p.imagem else None
+                }
+                for p in pecas_selecionadas
+            ]
+
+            looks_gerados.append({
+                "id": novo_look.id,
+                "nome_look": nome_look,
+                "descricao": descricao,
+                "pecas": pecas_do_look
+            })
+
+        if not looks_gerados:
+            return Response(
+                {"erro": "Não foi possível gerar combinações com as peças disponíveis."},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        # Retorna ambos os formatos (looks e look) para garantir que o frontend React exiba perfeitamente
+        return Response({
+            "looks": looks_gerados,
+            "look": looks_gerados[0]
+        })
+
+
+@api_view(['POST'])
+def alterar_senha(request):
+    if not request.user.is_authenticated:
+        return Response({'erro': 'Usuário não autenticado.'}, status=status.HTTP_401_UNAUTHORIZED)
+
+    senha_atual = request.data.get('senha_atual')
+    nova_senha = request.data.get('nova_senha')
+
+    if not request.user.check_password(senha_atual):
+        return Response({'erro': 'Senha atual incorreta.'}, status=status.HTTP_400_BAD_REQUEST)
+
+    request.user.set_password(nova_senha)
+    request.user.save()
+    login(request, request.user)
+    return Response({'mensagem': 'Senha alterada com sucesso!'})
+
+
+class RegistroDiarioViewSet(viewsets.ModelViewSet):
+    serializer_class = RegistroDiarioSerializer
+
+    def get_queryset(self):
+        if self.request.user.is_authenticated:
+            return RegistroDiario.objects.filter(usuario_django=self.request.user).order_by('-id')
+        user = User.objects.first()
+        if user:
+            return RegistroDiario.objects.filter(usuario_django=user).order_by('-id')
+        return RegistroDiario.objects.none()
+
+    def perform_create(self, serializer):
+        user = self.request.user if self.request.user.is_authenticated else User.objects.first()
+        serializer.save(usuario_django=user)
+</file>
+
+</files>

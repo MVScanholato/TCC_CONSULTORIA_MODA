@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
 
 from core.views import (
+    csrf,
     cadastrar_usuario,
     login_usuario,
     logout_usuario,
@@ -23,6 +24,7 @@ router.register(r'diario', RegistroDiarioViewSet, basename='diario')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
+    path('api/auth/csrf/', csrf, name='csrf'),
     path('api/auth/cadastrar/', cadastrar_usuario, name='cadastrar'),
     path('api/auth/login/', login_usuario, name='login'),
     path('api/auth/logout/', logout_usuario, name='logout'),

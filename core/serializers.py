@@ -1,33 +1,39 @@
 from rest_framework import serializers
-from django.contrib.auth.models import User
 from .models import Peca, Look, RegistroDiario
 
-class UsuarioSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = '__all__'
 
 class PecaSerializer(serializers.ModelSerializer):
     imagem = serializers.ImageField(required=False, allow_null=True)
-    imagem_path = serializers.ImageField(required=False, allow_null=True)
 
     class Meta:
         model = Peca
-        fields = '__all__'
-        extra_kwargs = {
-            'usuario': {'required': False, 'allow_null': True}
-        }
+        fields = ['id', 'categoria', 'cor', 'estilo', 'clima', 'imagem']
+        # usuario/usuario_django nem aparecem: o dono é sempre definido no servidor.
+
 
 class LookSerializer(serializers.ModelSerializer):
     pecas = PecaSerializer(many=True, read_only=True)
 
     class Meta:
         model = Look
-        fields = '__all__'
+        fields = ['id', 'nome_look', 'descricao', 'pecas']
+
 
 class RegistroDiarioSerializer(serializers.ModelSerializer):
     pecas_detalhes = PecaSerializer(source='pecas', many=True, read_only=True)
+    pecas = serializers.PrimaryKeyRelatedField(
+        many=True, required=False, queryset=Peca.objects.none()
+    )
 
     class Meta:
         model = RegistroDiario
-        fields = '__all__'
+        fields = ['id', 'data', 'pecas', 'pecas_detalhes', 'observacao', 'avaliacao', 'comentario']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        request = self.context.get('request')
+        if request and request.user.is_authenticated:
+            # só aceita IDs de peças do próprio usuário
+            self.fields['pecas'].child_relation.queryset = Peca.objects.filter(
+                usuario_django=request.user
+            )
