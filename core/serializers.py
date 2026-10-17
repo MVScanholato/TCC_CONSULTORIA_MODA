@@ -8,7 +8,6 @@ class PecaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Peca
         fields = ['id', 'categoria', 'cor', 'estilo', 'clima', 'imagem']
-        # usuario/usuario_django nem aparecem: o dono é sempre definido no servidor.
 
 
 class LookSerializer(serializers.ModelSerializer):
@@ -33,7 +32,6 @@ class RegistroDiarioSerializer(serializers.ModelSerializer):
         super().__init__(*args, **kwargs)
         request = self.context.get('request')
         if request and request.user.is_authenticated:
-            # só aceita IDs de peças do próprio usuário
             self.fields['pecas'].child_relation.queryset = Peca.objects.filter(
                 usuario_django=request.user
             )

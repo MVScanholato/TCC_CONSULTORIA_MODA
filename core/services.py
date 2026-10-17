@@ -22,7 +22,6 @@ COMPATIBILIDADE_ESTILOS = {
 
 
 def sao_estilos_compativeis(estilo1, estilo2):
-    """Verifica se dois estilos combinam entre si."""
     e1 = estilo1.lower().strip() if estilo1 else 'casual'
     e2 = estilo2.lower().strip() if estilo2 else 'casual'
 
@@ -34,7 +33,6 @@ def sao_estilos_compativeis(estilo1, estilo2):
 
 
 def sao_cores_harmonicas(cor1, cor2):
-    """Verifica se duas cores combinam segundo a tabela de harmonia."""
     c1 = cor1.lower().strip()
     c2 = cor2.lower().strip()
 
@@ -46,13 +44,7 @@ def sao_cores_harmonicas(cor1, cor2):
 
 
 def gerar_recomendacao_look(pecas, clima='Geral', ocasiao='Geral'):
-    """
-    Algoritmo de recomendação inteligente que considera:
-    - Categoria da peça (superior x inferior)
-    - Clima/Temperatura
-    - Harmonia de Cores
-    - Compatibilidade de Estilo
-    """
+
     categorias_superiores = ['camiseta', 'blusa', 'camisa', 'casaco', 'jaqueta', 'top', 'moletom']
     categorias_inferiores = ['calça', 'short', 'bermuda', 'saia', 'calca']
 

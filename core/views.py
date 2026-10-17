@@ -89,7 +89,6 @@ def alterar_senha(request):
     return Response({'mensagem': 'Senha alterada com sucesso!'})
 
 
-# ---------------------------------------------------------------- PEÇAS
 
 class PecaViewSet(viewsets.ModelViewSet):
     serializer_class = PecaSerializer
@@ -102,7 +101,6 @@ class PecaViewSet(viewsets.ModelViewSet):
         serializer.save(usuario_django=self.request.user)
 
 
-# ---------------------------------------------------------------- LOOKS
 
 CATEGORIAS_SUPERIORES = Q(categoria__icontains='camis') | Q(categoria__icontains='blusa') | \
     Q(categoria__icontains='top') | Q(categoria__icontains='casaco') | \
@@ -212,7 +210,6 @@ class LookViewSet(viewsets.ModelViewSet):
         return Response({"looks": looks_gerados, "look": looks_gerados[0]})
 
 
-# ---------------------------------------------------------------- DIÁRIO
 
 class RegistroDiarioViewSet(viewsets.ModelViewSet):
     serializer_class = RegistroDiarioSerializer
